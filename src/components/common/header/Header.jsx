@@ -18,14 +18,6 @@ function Header() {
                     <hr className="header-top__separator"/>
                 </section>
             </section>
-            <section className="header-bottom">
-                <section className="header-bottom__phone">
-                    123-456-7890
-                </section>
-                <section className="header-bottom__email">
-                    exampleinfo@terplocal.com
-                </section>
-            </section>
         </section>
     )
 }
