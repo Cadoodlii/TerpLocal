@@ -1,12 +1,12 @@
 import React from "react";
 import "../page-title/PageTitle.css"
 
-function Home () {
+function Dashboard () {
 
     return (
         <section>
             <div className="title">
-                Home
+                Dashboard
             </div>
             <p>
                 This is where home stuff goes.
@@ -15,4 +15,4 @@ function Home () {
     )
 }
 
-export default Home;
+export default Dashboard;

@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Header, Home, Opportunites, Rewards, Profile} from './components/common';
+import { Header, Dashboard, Opportunites, Rewards, Profile} from './components/common';
 import { Routes, Route} from "react-router-dom";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
       <Header />
       <Routes>
-        <Route path = "/" element = {<Home/>} />
+        <Route path = "/" element = {<Dashboard/>} />
         <Route path = "/opportunites" element = {<Opportunites />} />
         <Route path = "/rewards" element = {<Rewards/>} />
         <Route path = "/profile" element = {<Profile/>} />
