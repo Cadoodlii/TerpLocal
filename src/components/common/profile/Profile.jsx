@@ -1,8 +1,10 @@
 import "../page-title/PageTitle.css"
 import './Profile.css'
 import React, {Component} from 'react';
+import './Profile.css';
 
 class Profile extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -16,20 +18,37 @@ class Profile extends Component {
     });
   };
 
+  handleUpload = () => {
+    console.log('Image uploaded:', this.state.selectedFile);
+  }
+
   render() {
+    
+    //default profile picture
+    const defaultPFP = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png';
+    
     return (
       <div className="App">
+
         <input type="file" onChange={this.fileSelectedHandler} />
-        {this.state.selectedFile && (
-          <div>
+      
+        <div>
+        {this.state.selectedFile ? (
+          //true condition
             <img
               src={URL.createObjectURL(this.state.selectedFile)}
               alt="Selected"
               style={{ maxWidth: '100%', maxHeight: '300px' }}
             />
-            <button>hey</button>
-          </div>
+        ) : (
+          //default condition
+          <img
+          src = {defaultPFP}
+          alt = "Default"
+          style = {{maxWidth: '100%', maxHeight: '300px' }}
+          />
         )}
+      </div>
       </div>
     );
   }
