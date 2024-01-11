@@ -1,18 +1,21 @@
 import React from "react";
 import "../page-title/PageTitle.css"
 
-function Home () {
+function Dashboard ({isStudent}) {
 
     return (
         <section>
             <div className="title">
-                Home
+                Dashboard
             </div>
             <p>
                 This is where home stuff goes.
+            </p>
+            <p>
+                {isStudent ? "you are a student" : "you are a business"}
             </p>
         </section>
     )
 }
 
-export default Home;
+export default Dashboard;

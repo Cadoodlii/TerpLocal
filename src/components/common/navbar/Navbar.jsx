@@ -7,7 +7,7 @@ function Navbar() {
 
     return (
         <section className="navbar">
-            <Link to="/" className="navbar-item">Home</Link>
+            <Link to="/" className="navbar-item">Dashboard</Link>
             <Link to="/opportunites" className="navbar-item">Opportunities</Link>
             <Link to="/rewards" className="navbar-item">Rewards</Link>
             <Link to="/profile" className="navbar-item">Profile</Link>

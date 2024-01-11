@@ -1,5 +1,7 @@
 import React from "react";
 import { Navbar } from "../../common";
+import {Link} from "react-router-dom"
+
 
 import "./Header.css";
 
@@ -9,7 +11,7 @@ function Header() {
         <section className="header">
             <section className="header-top">
                 <section className="header-top__logo">
-                    <a href="/" className="header-logo"> TerpLocal </a>
+                    <Link to= "/" className="header-logo"> TerpLocal </Link>
                 </section>
                 <section className="header-top__navbar">
                     <section className="header-top__navigation">
