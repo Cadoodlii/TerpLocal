@@ -1,41 +1,38 @@
-import React, { useState } from 'react';
 import "../page-title/PageTitle.css"
+import './Profile.css'
+import React, {Component} from 'react';
 
-function Profile () {
+class Profile extends Component {
+  constructor() {
+    super();
+    this.state = {
+      selectedFile: null,
+    };
+  }
 
-    const PFP = () => {
-        const [PFP, setPFP] = useState("https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*");
-      
-        const PFPChange = (event) => {
-          const file = event.target.files[0];
-      
-          if (file) {
-            // Use FileReader to read the selected image
-            const reader = new FileReader();
-            reader.onload = () => {
-              setPFP(reader.result);
-            };
-            reader.readAsDataURL(file);
-          }
-        };
-      
-        return (
+  fileSelectedHandler = (event) => {
+    this.setState({
+      selectedFile: event.target.files[0],
+    });
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <input type="file" onChange={this.fileSelectedHandler} />
+        {this.state.selectedFile && (
           <div>
-            <input type="file" accept="image/*" onChange={PFPChange} />
-            {PFP && (
-              <div>
-                <p>Preview:</p>
-                <img src={PFP} alt="Selected" style={{ maxWidth: '100%', maxHeight: '300px' }} />
-              </div>
-            )}
+            <img
+              src={URL.createObjectURL(this.state.selectedFile)}
+              alt="Selected"
+              style={{ maxWidth: '100%', maxHeight: '300px' }}
+            />
+            <button>hey</button>
           </div>
-        );
-      };
-      
+        )}
+      </div>
+    );
+  }
 }
-
-
-
-
 
 export default Profile;
