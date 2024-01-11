@@ -5,3 +5,37 @@
     justify-content: center;
     margin: 40px 0px;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    margin-top: 5px;
+    overflow: auto;
+    min-height: 300px;
+    padding: 30px;
+  }
+.project {
+    display: flex;
+}
+.project-inner {
+    width: 800px;
+    display: flex;
+    background: #f4f4f4;
+    margin: 30px 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: left;
+    border-width: 5px;
+    border-style: solid;
+    border-color:rgb(228, 156, 111);
+  }
+
+  .side-column {
+    margin: 5px;
+    text-align: left;
+    text-indent: 30px;
+  }
+
+  .icon {
+    margin: 20px;
+  }

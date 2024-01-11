@@ -1,7 +1,8 @@
 import React from "react";
 import "../page-title/PageTitle.css"
 
-function Opportunities () {
+
+function Opportunities ({projects}) {
 
     return (
         <section>
