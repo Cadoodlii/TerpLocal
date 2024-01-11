@@ -1,7 +1,7 @@
 import React from "react";
 import "../page-title/PageTitle.css"
 
-function Dashboard () {
+function Dashboard ({isStudent}) {
 
     return (
         <section>
@@ -10,6 +10,9 @@ function Dashboard () {
             </div>
             <p>
                 This is where home stuff goes.
+            </p>
+            <p>
+                {isStudent ? "you are a student" : "you are a business"}
             </p>
         </section>
     )
