@@ -2,33 +2,30 @@ import "../login/Login.css"
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Login = ({ onLogin, isStudent }) => {
+const SignUp = ({ onSignUp, isStudent }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const handleLogin = () => {
-        if (username === 'demo' && password === 'password') {
-          onLogin(username);
-          navigate("/");
+    const handleSignUp = () => {
+        if (username && password) {
+          onSignUp();
+          navigate("/login");
         } else {
             setError('Invalid username or password');
         }
     };
-    const handleSignUp = () => {
-        navigate("/signup");
-    }
 
     const role = isStudent ? "Student" : "Business";
 
     return (
         <div>
-            <h2>{role} Login</h2>
+            <h2>{role} Sign Up</h2>
             <br></br>
             <form>
                 <div>
-                    <label htmlFor="username">Username:</label>&nbsp;&nbsp;
+                    <label htmlFor="username">Enter a username:</label>&nbsp;&nbsp;
                     <input
                         type="text"
                         className="login_field"
@@ -39,7 +36,7 @@ const Login = ({ onLogin, isStudent }) => {
                 </div>
                 <br></br>
                 <div>
-                    <label htmlFor="password">Password:</label>&nbsp;&nbsp;
+                    <label htmlFor="password">Enter a password:</label>&nbsp;&nbsp;
                     <input
                         type="password"
                         className="login_field"
@@ -50,11 +47,10 @@ const Login = ({ onLogin, isStudent }) => {
                 </div>
                 {error && <p style={{color: 'red'}}>{error}</p>}
                 <br></br>
-                <button type="button" className="custom-btn" onClick={handleLogin}>Login</button>&nbsp;&nbsp;
-                <button type="button" className="custom-btn" onClick={handleSignUp}>Sign Up</button>
+                <button type="button" className="custom-btn" onClick={handleSignUp}>Complete Registration</button>
             </form>
         </div>
     );
 };
 
-export default Login;
+export default SignUp;

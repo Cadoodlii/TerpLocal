@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import { useState } from 'react';
 import Login from './components/common/login';
+import SignUp from './components/common/signup/SignUp';
 import { Header, Dashboard, Opportunites, Rewards, Profile} from './components/common';
 import { Routes, Route} from "react-router-dom";
 import LandingButton from './components/common/landing-button/LandingButton';
@@ -21,6 +22,11 @@ function App() {
     setUsername('');
   };
 
+  const handleSignUp = (username, password) => {
+    // database backend storage stuff
+    setIsLoggedIn(false);
+  };
+
   return (
     <div className="App">
 
@@ -32,8 +38,9 @@ function App() {
         <Route path = "/" element = {<Dashboard isStudent= {isStudent} />} />
         <Route path = "/opportunites" element = {<Opportunites isStudent= {isStudent}/>} />
         <Route path = "/rewards" element = {<Rewards isStudent= {isStudent}/>} />
-        <Route path = "/profile" element = {<Profile isStudent= {isStudent}/>} />
+        <Route path = "/profile" element = {<Profile isStudent= {isStudent} username= {username}/>} />
         <Route path = "/login" element = {<Login onLogin= {handleLogin} isStudent= {isStudent}/>} />
+        <Route path = "/signup" element = {<SignUp onSignUp= {handleSignUp} isStudent= {isStudent} />} />
       </Routes>
     </div>
   );

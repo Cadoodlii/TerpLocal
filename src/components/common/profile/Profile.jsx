@@ -1,7 +1,7 @@
 import React from "react";
 import "../page-title/PageTitle.css"
 
-function Profile ({isStudent}) {
+function Profile ({isStudent, username}) {
 
     return (
         <section>
@@ -14,6 +14,7 @@ function Profile ({isStudent}) {
             <p>
                 {isStudent ? "you are a student" : "you are a business"}
             </p>
+            <br></br><p><b>Username:</b> {username}</p>
         </section>
     )
 }
