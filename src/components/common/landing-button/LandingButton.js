@@ -1,12 +1,18 @@
-const LandingButton = ({setStudent}) => {
+import "../login/Login.css"
+
+const LandingButton = ({isStudent, setStudent}) => {
 
 
   return (
     <div>
-        <button className= "btn" onClick={() => { setStudent(true); console.log("student")}}>
+        <button 
+          className= {`landing-btn student ${isStudent ? "btn-active" : ""}`} 
+          onClick={() => { setStudent(true); console.log("student")}}>
             Student
         </button>
-        <button className= "btn" onClick={() => { setStudent(false);console.log("business")}}>
+        <button 
+          className= {`landing-btn business ${!isStudent ? "btn-active" : ""}`} 
+          onClick={() => { setStudent(false);console.log("business")}}>
             Business
         </button>
     </div>

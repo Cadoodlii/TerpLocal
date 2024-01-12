@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import Login from './components/common/login';
 import SignUp from './components/common/signup/SignUp';
+import HomePage from './components/common/home/HomePage'
 import { Header, Dashboard, Opportunites, Rewards, Profile} from './components/common';
 import { Routes, Route} from "react-router-dom";
 import LandingButton from './components/common/landing-button/LandingButton';
@@ -55,10 +56,11 @@ function App() {
 
       <Header isLoggedIn={isLoggedIn} onLogout={handleLogout}/>
 
-      <LandingButton setStudent= {setStudent}/>
+      {!isLoggedIn && <LandingButton isStudent= {isStudent} setStudent= {setStudent}/>}
       
       <Routes>
-        <Route path = "/" element = {<Dashboard isStudent= {isStudent} projects = {projects}/>} />
+        <Route path = "/" element = {<HomePage isStudent= {isStudent} />} />
+        <Route path = "/dashboard" element = {<Dashboard isStudent= {isStudent} projects = {projects}/>} />
         <Route path = "/opportunites" element = {<Opportunites isStudent= {isStudent}/>} />
         <Route path = "/rewards" element = {<Rewards isStudent= {isStudent}/>} />
         <Route path = "/profile" element = {<Profile isStudent= {isStudent} username= {username}/>} />

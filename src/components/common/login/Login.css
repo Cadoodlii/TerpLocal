@@ -1,3 +1,27 @@
+
+.landing-btn {
+    background-color: gray;
+    color: silver;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 2px solid black;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.student {
+    border-radius: 7px 0px 0px 7px;
+}
+
+.business {
+    border-radius: 0px 7px 7px 0px;
+}
+
+.btn-active {
+    background-color: black;
+    color: white;
+}
+
 .custom-btn {
     background-color: gray;
     border: none;
@@ -8,7 +32,7 @@
     font-size: 1rem;
     cursor: pointer;
     border-radius: 0.3rem;
-  }
+}
 
 .custom-btn:hover {
     background-color: silver;

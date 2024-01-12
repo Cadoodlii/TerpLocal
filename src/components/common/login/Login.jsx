@@ -11,7 +11,7 @@ const Login = ({ onLogin, isStudent }) => {
     const handleLogin = () => {
         if (username && password) {
           onLogin(username);
-          navigate("/");
+          navigate("/dashboard");
         } else {
             setError('Invalid username or password');
         }

@@ -13,12 +13,16 @@ function Navbar({onLogout, isLoggedIn}) {
     };
 
     return (
+        isLoggedIn ? 
         <section className="navbar">
-            <Link to="/" className="navbar-item">Dashboard</Link>
+            <Link to="/dashboard" className="navbar-item">Dashboard</Link>
             <Link to="/opportunites" className="navbar-item">Opportunities</Link>
             <Link to="/rewards" className="navbar-item">Rewards</Link>
-            {isLoggedIn ? <Link to="/profile" className="navbar-item">Profile</Link> : <Link to="/login" className="navbar-item">Login</Link>}
-            {isLoggedIn && <Link to="#" className="navbar-item" onClick={handleLogout}>Logout</Link>}
+            <Link to="/profile" className="navbar-item">Profile</Link>
+            <Link to="/" className="navbar-item" onClick={handleLogout}>Logout</Link>
+        </section> :
+        <section className="navbar">
+            <Link to="/login" className="navbar-item">Login</Link>
         </section>
     )
 }
