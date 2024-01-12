@@ -8,21 +8,24 @@ function App() {
   const [projects, setProjects] = useState([
       {
         id: 1,
-        text: "design my website",
-        manager: "ella.co",
+        title: "design my website",
+        company: "ella.co",
         major: "computer science",
+        description: "design our shopping website targeted towards teens ;)",
       },
       {
         id: 2,
-        text: "draw a logo",
-        manager: "supreme",
+        title: "draw a logo",
+        company: "supreme",
         major: "art",
+        description: "ours is a very supreme company that always looks our for others",
       },
       {
         id: 3,
-        text: "make a business plan",
-        manager: "react.company",
+        title: "make a business plan",
+        company: "react.company",
         major: "business",
+        description: "we need help asap because we're about to go very broke",
       }
   ])
 

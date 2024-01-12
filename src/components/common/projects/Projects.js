@@ -4,7 +4,7 @@ const Projects = ({projects}) => {
     return (
         <>
             {projects.map((project) => (
-                <Project project = {project} />
+                <Project key = {project.id} project = {project} />
             ))}
         </>
     )
