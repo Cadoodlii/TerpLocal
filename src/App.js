@@ -11,19 +11,19 @@ import LandingButton from './components/common/landing-button/LandingButton';
 function App() {
   const [isStudent, setStudent] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [username, setUsername] = useState('')
+  const [email, setEmail] = useState('')
 
-  const handleLogin = (username) => {
+  const handleLogin = (email) => {
     setIsLoggedIn(true);
-    setUsername(username);
+    setEmail(email);
   };
 
   const handleLogout = () => {
     setIsLoggedIn(false);
-    setUsername('');
+    setEmail('');
   };
 
-  const handleSignUp = (username, password) => {
+  const handleSignUp = (email, password) => {
     // database backend storage stuff
     setIsLoggedIn(false);
   };
@@ -63,7 +63,7 @@ function App() {
         <Route path = "/dashboard" element = {<Dashboard isStudent= {isStudent} projects = {projects}/>} />
         <Route path = "/opportunites" element = {<Opportunites isStudent= {isStudent}/>} />
         <Route path = "/rewards" element = {<Rewards isStudent= {isStudent}/>} />
-        <Route path = "/profile" element = {<Profile isStudent= {isStudent} username= {username}/>} />
+        <Route path = "/profile" element = {<Profile isStudent= {isStudent} email= {email}/>} />
         <Route path = "/login" element = {<Login onLogin= {handleLogin} isStudent= {isStudent}/>} />
         <Route path = "/signup" element = {<SignUp onSignUp= {handleSignUp} isStudent= {isStudent} />} />
       </Routes>

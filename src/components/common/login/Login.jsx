@@ -3,17 +3,17 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Login = ({ onLogin, isStudent }) => {
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        if (username && password) {
-          onLogin(username);
+        if (email && password) {
+          onLogin(email);
           navigate("/dashboard");
         } else {
-            setError('Invalid username or password');
+            setError('Invalid email or password');
         }
     };
     const handleSignUp = () => {
@@ -28,13 +28,13 @@ const Login = ({ onLogin, isStudent }) => {
             <br></br>
             <form>
                 <div>
-                    <label htmlFor="username">Username:</label>&nbsp;&nbsp;
+                    <label htmlFor="email">Email:</label>&nbsp;&nbsp;
                     <input
                         type="text"
                         className="login_field"
-                        id="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
                 <br></br>
