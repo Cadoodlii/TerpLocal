@@ -9,7 +9,7 @@ const Login = ({ onLogin, isStudent }) => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        if (username === 'demo' && password === 'password') {
+        if (username && password) {
           onLogin(username);
           navigate("/");
         } else {
