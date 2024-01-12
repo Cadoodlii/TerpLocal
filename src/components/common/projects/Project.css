@@ -1,13 +1,5 @@
-.container {
-    max-width: 1200px;
-    margin: 0px auto;
-    overflow: auto;
-    min-height: 200px;
-    padding: 30px;
-  }
 
-
-  .project {
+.project {
     display: flex;
 }
 .project-inner {
