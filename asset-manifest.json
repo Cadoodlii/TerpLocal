@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/TerpLocal/static/css/main.4ccab588.css",
-    "main.js": "/TerpLocal/static/js/main.f5974f69.js",
+    "main.css": "/TerpLocal/static/css/main.14b1b304.css",
+    "main.js": "/TerpLocal/static/js/main.d8250821.js",
     "static/js/787.101cd2b0.chunk.js": "/TerpLocal/static/js/787.101cd2b0.chunk.js",
+    "static/media/vigilanteLOGO.png": "/TerpLocal/static/media/vigilanteLOGO.0e684d0b5db7dd5bbc69.png",
+    "static/media/sewinglogo.png": "/TerpLocal/static/media/sewinglogo.ff220a595c414dc0d252.png",
+    "static/media/boardbrewLOGO.png": "/TerpLocal/static/media/boardbrewLOGO.5b7f0846e786a3a5137e.png",
+    "static/media/sewingQR.png": "/TerpLocal/static/media/sewingQR.cb5484fe18e6c9703e30.png",
+    "static/media/vigilanteqr.png": "/TerpLocal/static/media/vigilanteqr.dbc8e88c3d8c70e0667b.png",
+    "static/media/boardQR.png": "/TerpLocal/static/media/boardQR.d049f4259be79c3ea382.png",
     "index.html": "/TerpLocal/index.html",
-    "main.4ccab588.css.map": "/TerpLocal/static/css/main.4ccab588.css.map",
-    "main.f5974f69.js.map": "/TerpLocal/static/js/main.f5974f69.js.map",
+    "main.14b1b304.css.map": "/TerpLocal/static/css/main.14b1b304.css.map",
+    "main.d8250821.js.map": "/TerpLocal/static/js/main.d8250821.js.map",
     "787.101cd2b0.chunk.js.map": "/TerpLocal/static/js/787.101cd2b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ccab588.css",
-    "static/js/main.f5974f69.js"
+    "static/css/main.14b1b304.css",
+    "static/js/main.d8250821.js"
   ]
 }
