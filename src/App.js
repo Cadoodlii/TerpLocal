@@ -39,7 +39,7 @@ function App() {
       <LandingButton setStudent= {setStudent}/>
       
       <Routes>
-        <Route path = "/" element = {<Dashboard isStudent= {isStudent} />} />
+        <Route path = "/" element = {<Dashboard isStudent= {isStudent} projects = {projects}/>} />
         <Route path = "/opportunites" element = {<Opportunites isStudent= {isStudent}/>} />
         <Route path = "/rewards" element = {<Rewards isStudent= {isStudent}/>} />
         <Route path = "/profile" element = {<Profile isStudent= {isStudent}/>} />
