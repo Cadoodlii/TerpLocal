@@ -1,7 +1,6 @@
 import "../page-title/PageTitle.css"
 import './Profile.css'
 import React, {Component} from 'react';
-import './Profile.css';
 
 class Profile extends Component {
 
@@ -49,6 +48,7 @@ class Profile extends Component {
           />
         )}
       </div>
+      <button onClick = {this.handleUpload}> Upload </button>
       </div>
     );
   }
