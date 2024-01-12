@@ -1,7 +1,7 @@
 import React from "react";
 import "../page-title/PageTitle.css"
 
-function Opportunities ({isStudent}) {
+function Opportunities ({projects, isStudent}) {
 
     return (
         <section>
