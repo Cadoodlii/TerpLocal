@@ -60,7 +60,7 @@ function App() {
       
       <Routes>
         <Route path = "/" element = {<HomePage isStudent= {isStudent} />} />
-        <Route path = "/dashboard" element = {<Dashboard isStudent= {isStudent} projects = {projects}/>} />
+        <Route path = "/dashboard" element = {<Dashboard isStudent= {isStudent} projects = {projects} email = {email}/>} />
         <Route path = "/opportunites" element = {<Opportunites isStudent= {isStudent}/>} />
         <Route path = "/rewards" element = {<Rewards isStudent= {isStudent}/>} />
         <Route path = "/profile" element = {<Profile isStudent= {isStudent} email= {email}/>} />
