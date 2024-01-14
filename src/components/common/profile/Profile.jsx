@@ -15,6 +15,7 @@ const handleMajor = (event) => setInputMajor(event.target.value);
 const handleYear = (event) => setInputYear(event.target.value);
 
 return (
+
 <div class = "general_info">
 
 <label htmlFor="textInput">Name: </label>
