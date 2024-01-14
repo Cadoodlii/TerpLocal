@@ -11,7 +11,7 @@ const LandingButton = ({isStudent, setStudent}) => {
           onClick={() => { setStudent(true); console.log("student btn clicked")
           }}>
 
-            <Link to="/login" style={{ textDecoration: 'none' }} >
+            <Link to="/login"  style={{ textDecoration: 'none' , color:"white"} }  >
               Student
             </Link>
 
@@ -20,7 +20,7 @@ const LandingButton = ({isStudent, setStudent}) => {
           className= {`landing-btn business ${!isStudent ? "btn-active" : ""}`} 
           onClick={() => { setStudent(false);console.log("business btn clicked")}}>
 
-            <Link to="/login" style={{ textDecoration: 'none' }} >
+            <Link to="/login" style={{ textDecoration: 'none' , color:"white"}} >
               Business
             </Link>
 
