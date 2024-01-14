@@ -1,6 +1,100 @@
-.Profile {
-    display: flex;
-    margin-top: 2300px;
-    background-color: red;
-    margin-left: 40 px;
-}
+.profile_picture_container{
+    text-align: center;
+    float: left;
+    padding: 0.4%;
+    background-color: white;
+    margin-top: 75px;
+  }
+  
+  .label,
+  .picture {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 400px;
+    overflow: hidden;
+    vertical-align: top;
+  }
+  
+  .choose_file input[type = "file"]{
+  visibility: hidden;
+  }
+  
+  .label{
+    color: black;
+    background-color: white;
+    width: 10rem;
+    padding: 5%;
+    background-color: #e7b0ba;
+    border: 2px solid #780116; 
+  }
+  
+  .general_info{
+    background-color: rgb(218, 176, 194);
+    border-radius: 5px;
+    padding: 40px;
+    text-align: right;
+    border: 2px;
+    width: 'auto';
+    float: right;
+    margin-right: 500px;
+    margin-top: 150px;
+    font-family: 'Arial, sans-serif';
+    font-size: 1.5rem;
+  }
+  .general_info_input {
+    font-family: 'Arial, sans-serif';
+    font-size: 1.5rem;
+    width: 15rem;
+  }
+  
+  .main_container{
+    align-content: center;
+    margin-top: 100px;
+    margin-left: 300px;
+  }
+  
+  .experience{
+    align: center;
+    width: 800px;
+    height: 450px;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 500px;
+    background-color: rgb(178, 58, 72);
+    position: absolute;
+    margin-left: 330px;
+    bottom: 10;
+    position:absolute;
+  }
+  
+  .exp_title{
+    font-family: 'Arial, sans-serif';
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .exp1{
+  text-align: left;
+  background-color: rgb(240, 191, 160);
+  border-radius: 1px;
+  padding: 5px;
+  font-family: 'Arial, sans-serif';
+  }
+  
+  .exp2{
+    text-align: left;
+    background-color: rgb(240, 191, 160);
+    border-radius: 1px;
+    padding: 5px;
+    font-family: 'Arial, sans-serif';
+    }
+  
+    .exp3{
+      text-align: left;
+      background-color: rgb(240, 191, 160);
+      border-radius: 1px;
+      padding: 5px;
+      font-family: 'Arial, sans-serif';
+      }
+  

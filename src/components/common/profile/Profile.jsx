@@ -1,57 +1,68 @@
-import "../page-title/PageTitle.css"
-import './Profile.css'
-import React, {Component} from 'react';
+import './Profile.css';
+import React, { useState } from 'react';
 
-class Profile extends Component {
+function Profile() {
 
-  constructor() {
-    super();
-    this.state = {
-      selectedFile: null,
-    };
-  }
+//initializing and declaring useStates
+const [inputName, setInputName] = useState('John Doe');
+const [inputEmail, setInputEmail] = useState('JohnDoe@gmail.com');
+const [inputMajor, setInputMajor] = useState('Computer Science');
+const [inputYear, setInputYear] = useState('Junior');
 
-  fileSelectedHandler = (event) => {
-    this.setState({
-      selectedFile: event.target.files[0],
-    });
-  };
+const handleName = (event) => setInputName(event.target.value);
+const handleEmail = (event) => setInputEmail(event.target.value);
+const handleMajor = (event) => setInputMajor(event.target.value);
+const handleYear = (event) => setInputYear(event.target.value);
 
-  handleUpload = () => {
-    console.log('Image uploaded:', this.state.selectedFile);
-  }
+return (
+<div class = "general_info">
 
-  render() {
-    
-    //default profile picture
-    const defaultPFP = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png';
-    
-    return (
-      <div className="App">
+<label htmlFor="textInput">Name: </label>
+<input
+class = "general_info_input"
+  type="text"
+  id="textInput"
+  value={inputName}
+  onChange={handleName}
+/>
 
-        <input type="file" onChange={this.fileSelectedHandler} />
-      
-        <div>
-        {this.state.selectedFile ? (
-          //true condition
-            <img
-              src={URL.createObjectURL(this.state.selectedFile)}
-              alt="Selected"
-              style={{ maxWidth: '100%', maxHeight: '300px' }}
-            />
-        ) : (
-          //default condition
-          <img
-          src = {defaultPFP}
-          alt = "Default"
-          style = {{maxWidth: '100%', maxHeight: '300px' }}
-          />
-        )}
-      </div>
-      <button onClick = {this.handleUpload}> Upload </button>
-      </div>
-    );
-  }
+
+<br />
+
+<label htmlFor="textInput">Email: </label>
+<input
+class = "general_info_input"
+  type="text"
+  id="textInput"
+  value={inputEmail}
+  onChange={handleEmail}
+/>
+
+
+<br />
+
+<label htmlFor="textInput">Major: </label>
+<input
+class = "general_info_input"
+  type="text"
+  id="textInput"
+  value={inputMajor}
+  onChange={handleMajor}
+/>
+
+<br />
+
+<label htmlFor="textInput">Year: </label>
+<input
+class = "general_info_input"
+  type="text"
+  id="textInput"
+  value={inputYear}
+  onChange={handleYear}
+/>
+</div>
+);
+
 }
 
 export default Profile;
