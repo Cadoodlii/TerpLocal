@@ -1,7 +1,8 @@
 
-.project {
+.project-dashboard {
     display: flex;
 }
+
 .project-inner {
     width: 800px;
     display: flex;

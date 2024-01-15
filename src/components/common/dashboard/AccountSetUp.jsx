@@ -2,7 +2,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const AccountSetUp = () => {
   return (
-    <div className="project">
+    <div className="project-dashboard">
             <div className="icon">
                 <IoIosArrowRoundForward size = "100px"/>
             </div>

@@ -7,11 +7,10 @@ import "./Project.css";
 
 const Project = ({project}) => {
     return (
-        <div className="project">
+        <div className="project-dashboard">
             <div className="icon">
                 <IoIosArrowRoundForward size = "100px"/>
                 <MdArrowForwardIos size = "80px"/>
-
             </div>
             <div className="project-inner">
                 <BsPersonVideo2 size = "150px"/>

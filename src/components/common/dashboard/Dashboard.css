@@ -6,10 +6,6 @@
     padding: 30px;
   }
 
-
-  .project {
-    display: flex;
-}
 .project-inner {
     width: 800px;
     display: flex;
