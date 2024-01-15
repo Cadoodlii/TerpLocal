@@ -1,5 +1,7 @@
 import React from "react";
 import "../page-title/PageTitle.css"
+import "./Opportunities.css"
+import OpProjects from "./OpProjects";
 
 function Opportunities ({projects, isStudent}) {
 
@@ -9,11 +11,12 @@ function Opportunities ({projects, isStudent}) {
                 Opportunites
             </div>
             <p>
-                This is where opportunity stuff goes.
+                {isStudent ? "Student View" : "Business View"}
             </p>
-            <p>
-                {isStudent ? "you are a student" : "you are a business"}
-            </p>
+
+            <div className="container opp-container">
+                <OpProjects projects={projects} />
+            </div>
         </section>
     )
 }

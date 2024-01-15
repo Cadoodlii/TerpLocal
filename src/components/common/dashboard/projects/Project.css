@@ -10,7 +10,7 @@
     padding: 10px 20px;
     cursor: pointer;
     text-align: left;
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     border-color:rgb(228, 156, 111);
 }
@@ -27,4 +27,10 @@ text-indent: 30px;
 
 .icon {
 margin: 20px;
+}
+
+.opport {
+    margin: 0px 5px;
+    border-width: 3px 0px 0px 0px;
+    border-color: rgb(178, 58, 72);
 }

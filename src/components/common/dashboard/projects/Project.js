@@ -1,19 +1,11 @@
 import { BsPersonVideo2 } from "react-icons/bs";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import { MdArrowForwardIos } from "react-icons/md";
 import Modal from "./Modal";
 import "./Project.css";
 
 
-const Project = ({project}) => {
+const Project = ({project, isOpport}) => {
     return (
-        <div className="project">
-            <div className="icon">
-                <IoIosArrowRoundForward size = "100px"/>
-                <MdArrowForwardIos size = "80px"/>
-
-            </div>
-            <div className="project-inner">
+            <div className={`project-inner ${isOpport ? "opport" : ""}`}>
                 <BsPersonVideo2 size = "150px"/>
                 <div className="project-inner-sum">
                     <br></br>
@@ -27,7 +19,6 @@ const Project = ({project}) => {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
