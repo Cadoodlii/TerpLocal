@@ -88,3 +88,50 @@
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 37.5%;
+  left: 10%;
+  width: 80%;
+}
+
+.textbox1 {
+  width: 71.7%;
+  border: 1px solid black;
+  padding: 50px;
+  margin: auto;
+  background-color: rgb(178, 58, 72);
+  position: absolute;
+}
+
+.project {
+  position: absolute;
+  left: 37.5%;
+  top: 15%;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.reward {
+  position: absolute;
+  left: 36%;
+  top: 55%;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: normal;
+}
+
+.addButton {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  border: none;
+  background-color: rgb(234, 140, 85);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px gray;
+}

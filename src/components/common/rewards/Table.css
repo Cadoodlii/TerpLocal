@@ -1,0 +1,56 @@
+.tableContainer {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  width: 80%;
+}
+
+.table {
+  table-layout: auto;
+  border-collapse: collapse;
+  border-radius: 5px;
+  width: 100cm;
+  max-width: 80%;
+  margin: auto;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.table thead {
+  background-color: rgb(178, 58, 72);
+}
+
+.table th {
+  padding: 0.8rem;
+}
+
+.table td {
+  padding: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+}
+.redeemed {
+  padding: 3px;
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(68, 149, 68);
+}
+
+.unredeemed {
+  padding: 3px;
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(186, 113, 121);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
