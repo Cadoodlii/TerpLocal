@@ -7,6 +7,8 @@ import "./Rewards.css";
 import Modal from "./Modal";
 import ModalV from "./ModalV";
 import ModalS from "./ModalS";
+import Table from "./Table";
+import ModalTable from "./ModalTable";
 import { useState } from "react";
 import { AiTwotoneHeart } from "react-icons/ai";
 import ConfigIcon from "./Icon";
@@ -15,6 +17,24 @@ function Rewards({ isStudent }) {
   const [openModal, setOpenModal] = useState(false);
   const [openModalV, setOpenModalV] = useState(false);
   const [openModalS, setOpenModalS] = useState(false);
+
+  const [openModalTable, setOpenModalTable] = useState(false);
+  const [data, setData] = useState([
+    { student: "John Doe", email: "@terpmail.umd.edu", status: "redeemed" },
+    {
+      student: "Sarah Doe",
+      email: "@terpmail.umd.edu",
+      status: "unredeemed",
+    },
+  ]);
+
+  const setSubmit = (newData) => {
+    setData([...data, newData]);
+  };
+
+  const setDeleteData = (targetIdx) => {
+    setData(data.filter((_, idx) => idx !== targetIdx));
+  };
 
   if (isStudent) {
     return (
@@ -61,6 +81,30 @@ function Rewards({ isStudent }) {
           {openModalS && <ModalS closeModal={setOpenModalS} />}
         </div>
       </section>
+    );
+  } else {
+    return (
+      <div className="Business">
+        <Table data={data} deleteData={setDeleteData} />
+        <button className="addButton" onClick={() => setOpenModalTable(true)}>
+          Add
+        </button>
+        {openModalTable && (
+          <ModalTable
+            closeModal={() => {
+              setOpenModalTable(false);
+            }}
+            onSubmit={setSubmit}
+          />
+        )}
+
+        <div className="container">
+          <div class="textbox1">
+            <h1 class="project">Project: Website</h1>
+            <h2 class="reward">Reward: 15% off purchase</h2>
+          </div>
+        </div>
+      </div>
     );
   }
 }
