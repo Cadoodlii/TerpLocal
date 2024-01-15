@@ -100,8 +100,8 @@ function Rewards({ isStudent }) {
 
         <div className="container">
           <div class="textbox1">
-            <h1 class="project">Project: Website</h1>
-            <h2 class="reward">Reward: 15% off purchase</h2>
+            <h1 class="rewardProject">Project: Website</h1>
+            <h2 class="rewardLabel">Reward: 15% off purchase</h2>
           </div>
         </div>
       </div>

@@ -101,14 +101,14 @@
   position: absolute;
 }
 
-.project {
+.rewardProject {
   position: absolute;
   left: 37.5%;
   top: 15%;
   font-family: "Gill Sans", sans-serif;
 }
 
-.reward {
+.rewardLabel {
   position: absolute;
   left: 36%;
   top: 55%;
