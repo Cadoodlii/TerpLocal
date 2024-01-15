@@ -89,19 +89,11 @@
   align-items: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 37.5%;
-  left: 10%;
-  width: 80%;
-}
-
 .textbox1 {
-  width: 71.7%;
+  position: absolute;
+  top: 30.5%;
+  left: 18%;
+  width: 57.35%;
   border: 1px solid black;
   padding: 50px;
   margin: auto;
