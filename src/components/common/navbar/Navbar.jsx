@@ -1,10 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import {Link, useNavigate} from "react-router-dom"
 
 import "./Navbar.css";
 
-function Navbar({onLogout, isLoggedIn}) {
+function Navbar({onLogout, isLoggedIn, isStudent}) {
 
     const navigate = useNavigate();
     const handleLogout = () => {
@@ -16,7 +15,7 @@ function Navbar({onLogout, isLoggedIn}) {
         isLoggedIn ? 
         <section className="navbar">
             <Link to="/dashboard" className="navbar-item">Dashboard</Link>
-            <Link to="/opportunites" className="navbar-item">Opportunities</Link>
+            <Link to="/opportunities" className="navbar-item"> {isStudent ? "Opportunities" : "My Projects" } </Link>
             <Link to="/rewards" className="navbar-item">Rewards</Link>
             <Link to="/profile" className="navbar-item">Profile</Link>
             <Link to="/" className="navbar-item" onClick={handleLogout}>Logout</Link>

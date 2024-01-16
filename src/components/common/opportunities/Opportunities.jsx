@@ -37,7 +37,7 @@ function Opportunities ({projects, isStudent}) {
         return (
             <section>
                 <div className="title">
-                    Opportunites
+                    Opportunities
                 </div>
                 <h2 className="side-column">
                     Filter : 
@@ -60,7 +60,7 @@ function Opportunities ({projects, isStudent}) {
         return (
             <section>
                 <div className="title">
-                    Opportunites
+                    Opportunities
                 </div>
                 <p>
                     This is where opportunity stuff goes.
