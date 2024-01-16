@@ -27,7 +27,7 @@ function App({isStudent}) {
             <Image />
             <BusinessProfile />
           </div>
-          <Pictures />
+        <Pictures />
           </div>
     )}
 

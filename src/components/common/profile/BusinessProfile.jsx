@@ -15,7 +15,7 @@ const handleMission = (event) => setMission(event.target.value);
 
    
    return(
-    <div>
+    <div class = "general_info">
 <label htmlFor="textInput">Name: </label>
 <input
 class = "general_info_input"

@@ -5,7 +5,7 @@ class Pictures extends Component {
   constructor() {
     super();
     this.state = {
-      selectedFile: [],
+      selectedFiles: Array(3).fill(null), // Initialize with 3 null values
     };
   }
 
@@ -21,57 +21,57 @@ class Pictures extends Component {
   };
 
   handleUpload = () => {
-    console.log('Image uploaded:', this.state.selectedFile);
+    console.log('Images uploaded:', this.state.selectedFiles);
   };
 
   render() {
-    // Default profile picture
+    // Default profile pictures
     const defaultPFPs = [
-        'https://www.digitalcitizen.life/wp-content/uploads/2020/10/photo_gallery-1-596x225.jpg',
-        'https://www.digitalcitizen.life/wp-content/uploads/2020/10/photo_gallery-1-596x225.jpg',
-        'https://www.digitalcitizen.life/wp-content/uploads/2020/10/photo_gallery-1-596x225.jpg'
+      'https://www.digitalcitizen.life/wp-content/uploads/2020/10/photo_gallery-1-596x225.jpg',
+      'https://www.digitalcitizen.life/wp-content/uploads/2020/10/photo_gallery-1-596x225.jpg',
+      'https://www.digitalcitizen.life/wp-content/uploads/2020/10/photo_gallery-1-596x225.jpg',
     ];
 
-    const max = 3;
-    const displayDefaultPictures = defaultPFPs.slice(0, max);
-
     return (
-      <div className="Pictures">
+      <div>
         <div>
-          <div>
-            {this.state.selectedFile.length > 0 ? (
-              // More pictures allows
-              this.state.selectedFile.map((pictures, index) => (
-              <img
-              key = {index}
-                src={URL.createObjectURL(pictures)}
-                alt={`Selected ${index + 1}`}
-                style={{ maxWidth: '100%', maxHeight: '300px', marginRight: '10px'}}
-              />
-            ))) : (
-              // Display default pictures
-             displayDefaultPictures.map((url, index) => (
-              <img
-              key = {index}
-                src={url}
-                alt={`Default ${index + 1}`}
-                style={{ maxWidth: '100%', maxHeight: '300px',  marginRight: '10px'}}
-              />
-            ))
-            )
-            }
-          </div>
-          <div className="choose_file">
-            <input type="file" id="fileInput" onChange={this.fileSelectedHandler} multiple/>
-            <label className="label" htmlFor="fileInput">
-              Choose File
-            </label>
+          <div className="Pictures">
+            {this.state.selectedFiles.map((picture, index) => (
+              <div key={index}>
+                {picture ? (
+                  // Display selected picture
+                  <img class = "pic"
+                    src={URL.createObjectURL(picture)}
+                    alt={`Selected ${index + 1}`}
+                    style={{ maxWidth: '200px', maxHeight: '200px', marginRight: '10px' }}
+                  />
+                ) : (
+                  // Display default picture
+                  <img
+                  class = "pic"
+                    src={defaultPFPs[index]}
+                    alt={`Default ${index + 1}`}
+                    style={{ maxWidth: '200px', maxHeight: '200px', marginRight: '10px' }}
+                  />
+                )}
+                <div className="choose_file">
+                  <input
+                  class = "pic"
+                    type="file"
+                    id={`fileInput${index}`}
+                    onChange={(e) => this.fileSelectedHandler(e, index)}
+                  />
+                  <label className="label" htmlFor={`fileInput${index}`}>
+                    Choose File
+                  </label>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     );
   }
-
 }
 
 export default Pictures;

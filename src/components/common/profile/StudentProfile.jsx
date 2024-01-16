@@ -20,7 +20,7 @@ return (
 
 <label htmlFor="textInput">Name: </label>
 <input
-class = "general_info_input"
+  class = "general_info_input"
   type="text"
   id="textInput"
   value={inputName}
