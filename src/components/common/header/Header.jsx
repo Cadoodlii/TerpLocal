@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 
 import "./Header.css";
 
-function Header({onLogout, isLoggedIn}) {
+function Header({onLogout, isLoggedIn, isStudent}) {
 
     return (
         <section className="header">
@@ -15,7 +15,7 @@ function Header({onLogout, isLoggedIn}) {
                 </section>
                 <section className="header-top__navbar">
                     <section className="header-top__navigation">
-                        <Navbar isLoggedIn={isLoggedIn} onLogout= {onLogout} />
+                        <Navbar isLoggedIn={isLoggedIn} onLogout= {onLogout} isStudent = {isStudent}/>
                     </section>
                     <hr className="header-top__separator"/>
                 </section>

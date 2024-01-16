@@ -2,7 +2,7 @@ import Header from "./header";
 import Navbar from "./navbar";
 import PageTitle from "./page-title";
 import Dashboard from "./dashboard";
-import Opportunites from "./opportunites";
+import Opportunites from "./opportunities";
 import Rewards from "./rewards";
 import Profile from "./profile";
 
