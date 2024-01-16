@@ -2,11 +2,6 @@
 
 
 
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
 .button {
   border: 1px solid #000;
   background: transparent;
@@ -19,23 +14,6 @@
 
 .button:hover {
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0);
-}
-
-.item {
-  padding: 4px 10px;
-  min-width: 100px;
-  min-height: 50px;
-  margin: 4px 10px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.category {
-  color: #64748b;
-  font-size: 10px;
 }
 
 .active {
