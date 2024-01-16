@@ -13,7 +13,7 @@ function Navbar({onLogout, isLoggedIn}) {
     };
 
     return (
-        isLoggedIn ? 
+        isLoggedIn ?
         <section className="navbar">
             <Link to="/dashboard" className="navbar-item">Dashboard</Link>
             <Link to="/opportunites" className="navbar-item">Opportunities</Link>
@@ -22,7 +22,7 @@ function Navbar({onLogout, isLoggedIn}) {
             <Link to="/" className="navbar-item" onClick={handleLogout}>Logout</Link>
         </section> :
         <section className="navbar">
-            <Link to="/login" className="navbar-item">Login</Link>
+            {/*Comment: Navbar will not be visible when NOT logged in. */}
         </section>
     )
 }
