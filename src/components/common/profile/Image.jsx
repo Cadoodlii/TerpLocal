@@ -16,9 +16,7 @@ class Image extends Component {
   };
 
   handleUpload = () => {
-    // Perform upload logic here
     console.log('Image uploaded:', this.state.selectedFile);
-    // You can send the file to your server or perform any other necessary actions.
   };
 
   render() {

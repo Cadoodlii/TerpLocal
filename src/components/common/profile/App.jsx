@@ -1,18 +1,36 @@
 import React from 'react';
 import Image from './Image';
-import Profile from './Profile';
+import StudentProfile from './StudentProfile';
 import Experience from './Experience';
 
-function App() {
-  return (
-    <div>
+import BusinessProfile from './BusinessProfile';
+import Pictures from './Pictures';
+
+function App({isStudent}) {
+
+      
+        if(isStudent){
+          return(
+        <div>
       <div class = "main_container">
       <Image />
-      <Profile />
+      <StudentProfile />
       </div>
       <Experience />
     </div>
-  );
+        )}
+
+        else {
+        return (
+          <div>
+          <div class = "main_container">
+            <Image />
+            <BusinessProfile />
+          </div>
+          <Pictures />
+          </div>
+    )}
+
 }
 
 export default App;

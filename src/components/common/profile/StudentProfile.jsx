@@ -1,7 +1,7 @@
 import './Profile.css';
 import React, { useState } from 'react';
 
-function Profile() {
+function StudentProfile() {
 
 //initializing and declaring useStates
 const [inputName, setInputName] = useState('John Doe');
@@ -66,4 +66,4 @@ class = "general_info_input"
 
 }
 
-export default Profile;
+export default StudentProfile;
