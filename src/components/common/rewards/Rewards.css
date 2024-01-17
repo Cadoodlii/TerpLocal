@@ -78,7 +78,7 @@
   position: absolute;
   right: 10px;
   bottom: 10px;
-  background-color: rgb(234, 140, 85);
+  background-color: rgb(236, 146, 94);
   border-color: rgb(140, 47, 57);
   border-radius: 10px;
   font-family: "Gill Sans", sans-serif;
@@ -121,7 +121,7 @@
   top: 24%;
   left: 50%;
   border: none;
-  background-color: rgb(234, 140, 85);
+  background-color: rgb(236, 146, 94);
   padding: 0.5em 1em;
   border-radius: 10px;
   cursor: pointer;
