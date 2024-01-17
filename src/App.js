@@ -40,7 +40,7 @@ function App() {
       company: "Three Little Birds Sewing Co",
       major: "computer science",
       description:
-        "Help us build the frontend of our website! Looking for computer science majors with at least 1 year of web development experience",
+        "Help us build the frontend of our website! At least one year of web development experience is preferred.",
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ function App() {
       company: "Board and Brew",
       major: "art",
       description:
-        "Help us design a logo for our business! We are looking for an updated logo that incorporates both the drinks and games aspect of our restaurant. Looking for students skilled in art/graphic design",
+        "Help us design a logo for our business! Looking for art students with experience in graphic design/digital art.",
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ function App() {
       company: "Vigilante Coffee Co",
       major: "business",
       description:
-        "Help us grow our social media account by creating a marketing campaign plan. Looking for students who have experience in marketing",
+        "Help us grow our social media account by creating a marketing campaign plan. This project is open to all business majors, but students specializing in marketing will be given preference.",
     },
   ]);
 

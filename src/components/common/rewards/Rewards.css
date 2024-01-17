@@ -87,6 +87,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .textbox1 {
@@ -118,6 +119,7 @@
 
 .addButton {
   position: absolute;
+  font-weight: bold;
   top: 24%;
   left: 50%;
   background-color: rgb(236, 146, 94);

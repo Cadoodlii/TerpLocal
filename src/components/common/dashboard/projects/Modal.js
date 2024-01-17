@@ -29,7 +29,7 @@ const Modal = ({ project }) => {
             <p>- We're looking for {project.major} majors</p>
             <p>- {project.description}</p>
             <button className="close-modal" onClick={toggleModal}>
-              close
+              X
             </button>
           </div>
         </div>

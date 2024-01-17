@@ -87,7 +87,7 @@ function Rewards({ isStudent }) {
       <div className="Business">
         <Table data={data} deleteData={setDeleteData} />
         <button className="addButton" onClick={() => setOpenModalTable(true)}>
-          Add
+          ADD
         </button>
         {openModalTable && (
           <ModalTable

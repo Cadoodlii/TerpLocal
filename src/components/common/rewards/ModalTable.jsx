@@ -67,14 +67,14 @@ const Modal = ({ closeModal, onSubmit }) => {
               </select>
             </div>
             <button type="submit" className="submitButton" onClick={setSubmit}>
-              Submit
+              SUBMIT
             </button>
             <button
               type="close"
               className="closeButtonTable"
               onClick={() => closeModal(false)}
             >
-              Close
+              CLOSE
             </button>
           </form>
         </div>

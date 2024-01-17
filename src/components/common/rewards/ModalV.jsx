@@ -6,8 +6,8 @@ const ModalV = ({ closeModal }) => {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
-        <div className="closeButton">
-          <button className="button" onClick={() => closeModal(false)}>
+        <div className="closeButtonContainer">
+          <button className="closeButton" onClick={() => closeModal(false)}>
             X
           </button>
         </div>

@@ -26,11 +26,15 @@
 .label {
   color: black;
   background-color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
   width: 10rem;
   padding: 5%;
   background-color: rgb(236, 146, 94);
   border-radius: 15px;
   border: 2px solid rgb(140, 47, 57);
+  cursor: pointer;
 }
 
 /*Information Container*/
