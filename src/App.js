@@ -36,7 +36,7 @@ function App() {
   const [projects, setProjects] = useState([
     {
       id: 1,
-      title: "Build Our Website",
+      title: "Build a Website",
       company: "Three Little Birds Sewing Co",
       major: "computer science",
       description:

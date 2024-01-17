@@ -122,6 +122,7 @@
   border-radius: 15px;
   padding: 30px;
   background-color: rgb(178, 58, 72);
+  border: 2px solid rgb(140, 47, 57);
   position: absolute;
   left: 33%;
   top: 25%;
