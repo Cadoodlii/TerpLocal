@@ -17,7 +17,7 @@ const ProjectsB = ({projects}) => {
       };
 
     const [currentProjects, setProjects] = useState(projects);
-    const [key, setKey] = useState(currentProjects + 1);
+    const [key, setKey] = useState(currentProjects.length + 1);
 
     const updateProjects = (key) => {
         const update = currentProjects.filter(project => project.id !== key);
@@ -25,9 +25,14 @@ const ProjectsB = ({projects}) => {
         setProjects(update);
     };
 
-    const updateImg = (image) => {
-        setImg(image);
+    const updateImg = (img) => {
+        setImg(img);
     }
+
+    const handleFileChange = (e) => {
+        const selectedFile = e.target.files[0];
+        setImg(selectedFile);
+    };
     
     const addProject = () => {
         const newProject = [
@@ -41,6 +46,7 @@ const ProjectsB = ({projects}) => {
                 image: img,
             }
         ];
+
         const update = newProject.concat(currentProjects);
         console.log(newProject);
         console.log(update);
@@ -57,7 +63,8 @@ const ProjectsB = ({projects}) => {
             {(formModal && (
                 <div>
                     <form className="add_form">
-                        <Image updateImg= {updateImg} /> <p></p>
+                       <Image updateImg= {updateImg} /> <p></p>
+                       {/* <input type="file" onChange={handleFileChange} /> */}
                         <h2>Title: <input onChange={(e) => setTitle(e.target.value)} className="edit_field" type="text" /></h2>
                         <p>Company Name: <input onChange={(e) => setCompany(e.target.value)} className="edit_field" type="text" /></p>
                         <p>Preferred Major:
