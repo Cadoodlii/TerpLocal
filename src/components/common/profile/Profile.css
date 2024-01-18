@@ -6,7 +6,7 @@
   padding: 0.4%;
   background-color: white;
   position: absolute;
-  left: 12.5%;
+  left: 16%;
   top: 25%;
 }
 
@@ -43,13 +43,13 @@
   background-color: rgb(252, 185, 178);
   border: 2px solid rgb(140, 47, 57);
   border-radius: 15px;
-  padding: 30px;
+  padding: 20px;
   text-align: right;
   width: "auto";
   float: right;
   position: absolute;
-  top: 60%;
-  left: 8%;
+  top: 65%;
+  left: 12.5%;
   font-family: "Gill Sans", sans-serif;
   font-size: 1rem;
 }
@@ -63,8 +63,8 @@
   width: "auto";
   float: right;
   position: absolute;
-  top: 65%;
-  left: 16%;
+  top: 68%;
+  left: 18%;
   font-family: "Gill Sans", sans-serif;
   font-size: 1.2rem;
 }
@@ -99,7 +99,7 @@
   padding: 30px;
   background-color: rgb(178, 58, 72);
   position: absolute;
-  left: 40%;
+  left: 41%;
   top: 25%;
 }
 
