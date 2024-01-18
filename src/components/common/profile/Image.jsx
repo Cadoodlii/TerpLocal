@@ -1,5 +1,5 @@
-import './Profile.css';
-import React, { Component } from 'react';
+import "./Profile.css";
+import React, { Component } from "react";
 
 class Image extends Component {
   constructor() {
@@ -16,12 +16,13 @@ class Image extends Component {
   };
 
   handleUpload = () => {
-    console.log('Image uploaded:', this.state.selectedFile);
+    console.log("Image uploaded:", this.state.selectedFile);
   };
 
   render() {
     // Default profile picture
-    const defaultPFP = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png';
+    const defaultPFP =
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png";
 
     return (
       <div className="Image">
@@ -32,19 +33,23 @@ class Image extends Component {
               <img
                 src={URL.createObjectURL(this.state.selectedFile)}
                 alt="Selected"
-                style={{ hidth: '200px', height: '200px', objectFit: 'cover' }}
+                style={{ width: "200px", height: "200px", objectFit: "cover" }}
               />
             ) : (
               // Default condition: Display default profile picture
               <img
                 src={defaultPFP}
                 alt="Default"
-                style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+                style={{ width: "200px", height: "200px", objectFit: "cover" }}
               />
             )}
           </div>
           <div className="choose_file">
-            <input type="file" id="fileInput" onChange={this.fileSelectedHandler} />
+            <input
+              type="file"
+              id="fileInput"
+              onChange={this.fileSelectedHandler}
+            />
             <label className="label" htmlFor="fileInput">
               Choose File
             </label>
@@ -53,7 +58,6 @@ class Image extends Component {
       </div>
     );
   }
-
 }
 
 export default Image;

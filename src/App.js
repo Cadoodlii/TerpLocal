@@ -13,7 +13,7 @@ import {
 } from "./components/common";
 import { Routes, Route } from "react-router-dom";
 import LandingButton from "./components/common/landing-button/LandingButton";
-
+import Footer from "./components/common/footer/Footer";
 function App() {
   const [isStudent, setStudent] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -102,6 +102,7 @@ function App() {
           element={<SignUp onSignUp={handleSignUp} isStudent={isStudent} />}
         />
       </Routes>
+      <Footer />
     </div>
   );
 }
