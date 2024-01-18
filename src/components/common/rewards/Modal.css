@@ -1,7 +1,7 @@
 .modalBackground {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 0;
   top: 0;
@@ -16,7 +16,7 @@
   height: 350px;
   border-radius: 25px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
   padding: 15px;
   text-align: center;
   position: relative;
@@ -27,7 +27,7 @@
   line-height: 1.5;
   vertical-align: top;
   position: absolute;
-  bottom: 10%;
+  bottom: 8%;
   width: 91%;
 }
 
@@ -42,14 +42,15 @@
   width: 100%;
   height: auto;
 }
-.closeButton {
+.closeButtonContainer {
   display: flex;
   justify-content: flex-end;
 }
 
-.closeButton .button {
+.closeButton {
   background-color: transparent;
   font-size: 20px;
   border: none;
   color: rgb(67, 67, 67);
+  cursor: pointer;
 }

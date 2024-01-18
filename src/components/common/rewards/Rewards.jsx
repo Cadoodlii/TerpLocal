@@ -38,7 +38,7 @@ function Rewards({ isStudent }) {
 
   if (isStudent) {
     return (
-      <section>
+      <section class="container">
         <div class="box">
           <img class="logo" src={bbLogo} alt="Board and Brew Logo" />
           <h1 class="text">Board and Brew</h1>
@@ -87,7 +87,7 @@ function Rewards({ isStudent }) {
       <div className="Business">
         <Table data={data} deleteData={setDeleteData} />
         <button className="addButton" onClick={() => setOpenModalTable(true)}>
-          Add
+          ADD
         </button>
         {openModalTable && (
           <ModalTable
