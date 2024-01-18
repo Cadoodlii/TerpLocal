@@ -22,7 +22,7 @@ function App({isStudent}) {
 
         else {
         return (
-          <div>
+          <div className='container'>
           <div class = "main_container">
             <Image />
             <BusinessProfile />

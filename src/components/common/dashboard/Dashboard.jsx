@@ -7,7 +7,7 @@ import { AccountSetUp } from "./AccountSetUp";
 function Dashboard({ projects, isStudent, email }) {
   if (isStudent) {
     return (
-      <section>
+      <section className="container">
         <div className="title"></div>
         <h2 className="side-column">
           Welcome, {email}. Finish setting up your account!
@@ -18,23 +18,23 @@ function Dashboard({ projects, isStudent, email }) {
         <br></br>
         <br></br>
         <h2 className="side-column">Your Recommended Projects:</h2>
-        <div className="container">
+        <div>
           <Projects projects={projects} />
         </div>
       </section>
     );
   } else {
     return (
-      <section>
+      <section className="container">
         <div className="title"></div>
         <h2 className="side-column">
           Welcome, {email}. Finish setting up your account:
         </h2>
-        <div className="container">
+        <div>
           <AccountSetUp />
         </div>
         <h2 className="side-column">Your Projects:</h2>
-        <div className="container">
+        <div>
           <Projects
             projects={projects.filter((project) => project.company === email)}
           />
