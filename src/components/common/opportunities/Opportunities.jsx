@@ -60,63 +60,17 @@ function Opportunities({ projects, isStudent }) {
     );
   } else {
     return (
-      <section>
-        <div className="title"></div>
-        <p>This is where opportunity stuff goes.</p>
-        <p>{isStudent ? "you are a student" : "you are a business"}</p>
-      </section>
-    );
-  }
-    useEffect(() => {
-        const filterProjects = () => {
-            if (selectedFilters.length > 0) {
-                let tempProj = selectedFilters.map((selectedMajor) => {
-                    let temp = projects.filter((project) => project.major === selectedMajor);
-                    return temp;
-                });
-                setFilteredProjects(tempProj.flat());
-            } else {
-                setFilteredProjects([...projects]);
-            };
-        };
-        filterProjects();
-    }, [selectedFilters, projects]);
-    
-    if (isStudent) {
-        return (
-            <section>
-                <div className="title">
-                    Opportunities
-                </div>
-                <h2 className="side-column">
-                    Filter : 
-                    {filters.map((major, idx) => (
-                        <button onClick = {() => handleFilterButtonClick(major)}
-                            className={`button ${
-                            selectedFilters?.includes(major) ? "active" : ""
-                          }`}
-                            key = {`filters-${idx}`}>
-                                {major}
-                        </button>
-                    ))}
-                </h2>
-                <div className="container">
-                    <Projects projects = {filteredProjects} />
-                </div>
-            </section>
-        ) 
-    } else {
-        return (
-            <section>
-                <div className="title">
-                    My Projects
-                </div>
-                <div className="container">
-                    <ProjectsB projects = {projects} />
-                </div>
-            </section>
-        )
-    }
+        <section>
+            <div className="title">
+                My Projects
+            </div>
+            <div className="container">
+                <ProjectsB projects = {projects} />
+            </div>
+        </section>
+    )
+  };
+
 }
 
 export default Opportunities;

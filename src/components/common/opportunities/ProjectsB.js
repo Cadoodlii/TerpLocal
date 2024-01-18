@@ -1,39 +1,51 @@
 import Project from "./Project";
 import "./Opportunities.css";
 import { useState } from "react";
+import Image from "./Image";
 
 const ProjectsB = ({projects}) => {
     const [formModal, setFormModal] = useState(false);
+    const [img, setImg] = useState("https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png");
     const [title, setTitle] = useState('');
     const [company, setCompany] = useState('');
     const [major, setMajor] = useState('');
     const [description, setDescription] = useState('');
-  
+    const [url, setUrl] = useState('');
+
     const toggleForm = () => {
         setFormModal(!formModal);
       };
 
     const [currentProjects, setProjects] = useState(projects);
+    const [key, setKey] = useState(currentProjects + 1);
+
     const updateProjects = (key) => {
         const update = currentProjects.filter(project => project.id !== key);
         console.log(update);
         setProjects(update);
     };
-    let currID = 4;
-    const addProject = () => {
-        const update = currentProjects.concat(
-            [
-                {
-                    id: currID++,
-                    title: title,
-                    company: company,
-                    major: major,
-                    description: description,
-                }
-            ]
-        );
 
+    const updateImg = (image) => {
+        setImg(image);
+    }
+    
+    const addProject = () => {
+        const newProject = [
+            {
+                id: key,
+                title: title,
+                company: company,
+                major: major,
+                description: description,
+                url: url,
+                image: img,
+            }
+        ];
+        const update = newProject.concat(currentProjects);
+        console.log(newProject);
+        console.log(update);
         setProjects(update);
+        setKey(key + 1);
         toggleForm();
     };
 
@@ -45,6 +57,7 @@ const ProjectsB = ({projects}) => {
             {(formModal && (
                 <div>
                     <form className="add_form">
+                        <Image updateImg= {updateImg} /> <p></p>
                         <h2>Title: <input onChange={(e) => setTitle(e.target.value)} className="edit_field" type="text" /></h2>
                         <p>Company Name: <input onChange={(e) => setCompany(e.target.value)} className="edit_field" type="text" /></p>
                         <p>Preferred Major:
@@ -56,8 +69,9 @@ const ProjectsB = ({projects}) => {
                             </select>
                         </p>
                         <p>Description: <br></br><textarea onChange={(e) => setDescription(e.target.value)} className="add_desc"></textarea></p>
-                        <button className="edit_button" onClick= {addProject}>Post</button>
-                        <button className="edit_button" onClick= {toggleForm}>Cancel</button>
+                        <p>Website: <input className="edit_button url" type="text" onChange={(e) => setUrl(e.target.value)}/> </p>
+                        <button className="add_button" onClick= {addProject}>Post</button>
+                        <button className="add_button" onClick= {toggleForm}>Cancel</button>
                     </form>
                 </div>
             ))}

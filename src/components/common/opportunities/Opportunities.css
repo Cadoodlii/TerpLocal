@@ -119,6 +119,7 @@
 }
 
 .add_form {
+  z-index: 4;
   position: absolute;
   background-color: rgb(241, 197, 171);
   border: 0.2rem solid rgb(236, 146, 94);
@@ -129,8 +130,17 @@
 }
 
 .add_desc {
-  height: 10rem;
-  width: 15rem;
+  height: 5rem;
+  width: 20rem;
+}
+
+.add_button { 
+  padding: .5rem;
+  background-color: rgb(236, 146, 94);
+  border-radius: .5rem;
+  border: 2px solid maroon;
+  margin: .5rem;
+  cursor: pointer;
 }
 
 p {
@@ -144,4 +154,19 @@ p {
   100% {
     transform: translateX(0rem);
   }
+}
+
+.url {
+  width: 15rem;
+}
+
+.profile_picture {
+  align-items: center;
+  padding: 0.4%;
+  left: 16%;
+  top: 25%;
+}
+
+img {
+  border: 1px dotted maroon;
 }

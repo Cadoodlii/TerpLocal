@@ -19,17 +19,21 @@ const Project = ({ key, project, updateProjects }) => {
   return (
     <div className="project-dashboard">
       <div className="project-inner">
-        <AiOutlineTeam size="125px" />
-        <Active status={true}/>
+      <Active status={true}/>
+        <div className="dotted-line"> 
+          <img className="project-image" src={project.image} alt="project image" />
+        </div>
         <div className="project-inner-sum">
           <br></br>
           <h2>{currentProject.title}</h2>
           <br></br>
-          <div>
-            <pre className="dashboard_description">
-              Company: {currentProject.company}, looking for {currentProject.major} majors
+          <div className="dashboard_description">
+            <pre>
+              Company: {currentProject.company}
+              <br></br>
+              We're looking for {currentProject.major} majors
             </pre>
-            <Modal project={project} updateProject={updateProject} />
+            <Modal project={project} updateProject= {updateProject} />
           </div>
         </div>
       </div>
@@ -38,3 +42,4 @@ const Project = ({ key, project, updateProjects }) => {
 };
 
 export default Project;
+

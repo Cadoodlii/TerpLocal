@@ -10,6 +10,7 @@ const Modal = ({ project, updateProject }) => {
   const [company, setCompany] = useState(project.company);
   const [major, setMajor] = useState(project.major);
   const [description, setDescription] = useState(project.description);
+  const [url, setUrl] = useState(project.url);
 
   const toggleModal = () => {
     setModal(!modal);
@@ -31,6 +32,7 @@ const Modal = ({ project, updateProject }) => {
         company: company,
         major: major,
         description: description,
+        url: url,
     };
 
     updateProject(newProject);
@@ -67,8 +69,9 @@ const Modal = ({ project, updateProject }) => {
             <p>- Company: <input className="edit_field" type="text" value={company} onChange={(e) => setCompany(e.target.value)}/></p>
             <p>- We're looking for {selectMajor} majors</p>
             <p>- Description: <br></br><textarea className="desc_field" onChange={(e) => setDescription(e.target.value)}>{description}</textarea></p>
+            <p>- Visit us at <input className="edit_button url" type="text" value={url} onChange={(e) => setUrl(e.target.value)}/> </p>
             <button className="close-modal" onClick={toggleModal}>
-              close
+              X
             </button>
             <div className="center">
                 <button className="edit_button" onClick={handleDelete}>Delete Posting</button>
