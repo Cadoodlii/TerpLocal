@@ -40,6 +40,8 @@ function App() {
     // database backend storage stuff
     setIsLoggedIn(false);
   };
+
+  
   const [projects, setProjects] = useState([
     {
       id: 1,
@@ -102,6 +104,8 @@ function App() {
       url: "https://www.facebook.com/Fiasfabfinds/",
     },
   ]);
+
+
 
   return (
     <div className="App">
