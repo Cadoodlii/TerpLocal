@@ -68,4 +68,4 @@ const ProjectsB = ({projects}) => {
     )
 }
 
-export default ProjectsB
+export default ProjectsB;

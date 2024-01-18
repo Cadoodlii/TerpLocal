@@ -60,7 +60,7 @@ const Modal = ({ project, updateProject }) => {
       </button>
 
       {modal && (
-        <div className="modal">
+        <div className="modal edit">
           <div className="overlay"></div>
           <div className="modal-content">
             <h2>Title: <input className="edit_field" type="text" value={title} onChange={(e) => setTitle(e.target.value)}/></h2>
@@ -79,7 +79,7 @@ const Modal = ({ project, updateProject }) => {
       )}
 
       {table && (
-        <div className="overlay">
+        <div className="overlay applications">
                     
             <div className="tableContainer">
             
