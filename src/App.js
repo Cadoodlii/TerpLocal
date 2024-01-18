@@ -109,49 +109,51 @@ function App() {
 
 
   return (
-    <div className="App">
-      <Header
-        isLoggedIn={isLoggedIn}
-        onLogout={handleLogout}
-        isStudent={isStudent}
-      />
+    <>
+      <div className="App">
+        <Header
+          isLoggedIn={isLoggedIn}
+          onLogout={handleLogout}
+          isStudent={isStudent}
+        />
 
-      {!isLoggedIn && (
-        <LandingButton isStudent={isStudent} setStudent={setStudent} />
-      )}
+        {!isLoggedIn && (
+          <LandingButton isStudent={isStudent} setStudent={setStudent} />
+        )}
 
-      <Routes>
-        <Route path="/" element={<HomePage isStudent={isStudent} />} />
-        <Route
-          path="/dashboard"
-          element={
-            <Dashboard
-              isStudent={isStudent}
-              projects={projects}
-              email={email}
-            />
-          }
-        />
-        <Route
-          path="/opportunities"
-          element={<Opportunites isStudent={isStudent} projects={projects} />}
-        />
-        <Route path="/rewards" element={<Rewards isStudent={isStudent} />} />
-        <Route
-          path="/profile"
-          element={<Profile isStudent={isStudent} email={email} />}
-        />
-        <Route
-          path="/login"
-          element={<Login onLogin={handleLogin} isStudent={isStudent} />}
-        />
-        <Route
-          path="/signup"
-          element={<SignUp onSignUp={handleSignUp} isStudent={isStudent} />}
-        />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<HomePage isStudent={isStudent} />} />
+          <Route
+            path="/dashboard"
+            element={
+              <Dashboard
+                isStudent={isStudent}
+                projects={projects}
+                email={email}
+              />
+            }
+          />
+          <Route
+            path="/opportunities"
+            element={<Opportunites isStudent={isStudent} projects={projects} />}
+          />
+          <Route path="/rewards" element={<Rewards isStudent={isStudent} />} />
+          <Route
+            path="/profile"
+            element={<Profile isStudent={isStudent} email={email} />}
+          />
+          <Route
+            path="/login"
+            element={<Login onLogin={handleLogin} isStudent={isStudent} />}
+          />
+          <Route
+            path="/signup"
+            element={<SignUp onSignUp={handleSignUp} isStudent={isStudent} />}
+          />
+        </Routes>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

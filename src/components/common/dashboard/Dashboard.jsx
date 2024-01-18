@@ -12,9 +12,11 @@ function Dashboard({ projects, isStudent, email }) {
         <h2 className="side-column">
           Welcome, {email}. Finish setting up your account!
         </h2>
-        <div className="container">
+        <div>
           <AccountSetUp />
         </div>
+        <br></br>
+        <br></br>
         <h2 className="side-column">Your Recommended Projects:</h2>
         <div className="container">
           <Projects projects={projects} />

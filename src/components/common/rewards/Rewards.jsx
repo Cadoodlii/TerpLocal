@@ -38,7 +38,7 @@ function Rewards({ isStudent }) {
 
   if (isStudent) {
     return (
-      <section>
+      <section class="container">
         <div class="box">
           <img class="logo" src={bbLogo} alt="Board and Brew Logo" />
           <h1 class="text">Board and Brew</h1>
