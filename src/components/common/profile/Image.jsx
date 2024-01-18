@@ -32,14 +32,14 @@ class Image extends Component {
               <img
                 src={URL.createObjectURL(this.state.selectedFile)}
                 alt="Selected"
-                style={{ maxWidth: '100%', maxHeight: '300px' }}
+                style={{ hidth: '200px', height: '200px', objectFit: 'cover' }}
               />
             ) : (
               // Default condition: Display default profile picture
               <img
                 src={defaultPFP}
                 alt="Default"
-                style={{ maxWidth: '100%', maxHeight: '300px' }}
+                style={{ width: '200px', height: '200px', objectFit: 'cover' }}
               />
             )}
           </div>
