@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../page-title/PageTitle.css";
 import Projects from "../dashboard/projects/Projects";
+import ProjectsB from "./ProjectsB";
 import "./Opportunities.css";
 
 function Opportunities ({projects, isStudent}) {
@@ -60,14 +61,11 @@ function Opportunities ({projects, isStudent}) {
         return (
             <section>
                 <div className="title">
-                    Opportunities
+                    My Projects
                 </div>
-                <p>
-                    This is where opportunity stuff goes.
-                </p>
-                <p>
-                    {isStudent ? "you are a student" : "you are a business"}
-                </p>
+                <div className="container">
+                    <ProjectsB projects = {projects} />
+                </div>
             </section>
         )
     }
