@@ -43,15 +43,15 @@ class Pictures extends Component {
                   <img class = "pic"
                     src={URL.createObjectURL(picture)}
                     alt={`Selected ${index + 1}`}
-                    style={{ maxWidth: '200px', maxHeight: '200px', marginRight: '10px' }}
-                  />
+                    style={{width: '150px', height: '130px', objectFit: 'cover', marginRight: '10px'}}
+                    />
                 ) : (
                   // Display default picture
                   <img
                   class = "pic"
                     src={defaultPFPs[index]}
                     alt={`Default ${index + 1}`}
-                    style={{ maxWidth: '200px', maxHeight: '200px', marginRight: '10px' }}
+                    style={{width: '150px', height: '130px', objectFit: 'cover', marginRight: '10px'}}
                   />
                 )}
                 <div className="choose_file">
