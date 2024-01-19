@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/TerpLocal/static/css/main.3986dd6c.css",
-    "main.js": "/TerpLocal/static/js/main.8250c73a.js",
+    "main.css": "/TerpLocal/static/css/main.cf22fa03.css",
+    "main.js": "/TerpLocal/static/js/main.f68463fb.js",
     "static/js/787.101cd2b0.chunk.js": "/TerpLocal/static/js/787.101cd2b0.chunk.js",
+    "static/media/ValenciasProduce.png": "/TerpLocal/static/media/ValenciasProduce.a054f5f2e2b99f632462.png",
+    "static/media/RandaliaBeehives.png": "/TerpLocal/static/media/RandaliaBeehives.2262485c2b99bbc083e6.png",
     "static/media/vigilanteLOGO.png": "/TerpLocal/static/media/vigilanteLOGO.0e684d0b5db7dd5bbc69.png",
+    "static/media/FiasFabulousFinds.png": "/TerpLocal/static/media/FiasFabulousFinds.57395be422de5bfeea03.png",
     "static/media/sewinglogo.png": "/TerpLocal/static/media/sewinglogo.ff220a595c414dc0d252.png",
+    "static/media/WoodsFlowersAndGifts.png": "/TerpLocal/static/media/WoodsFlowersAndGifts.8b3d44eef346b4386fa5.png",
+    "static/media/LittleBoyBakery.png": "/TerpLocal/static/media/LittleBoyBakery.2db4ce199db9cae5767c.png",
+    "static/media/FairDaysPlay.png": "/TerpLocal/static/media/FairDaysPlay.a2e5e93c780c7f621f91.png",
     "static/media/boardbrewLOGO.png": "/TerpLocal/static/media/boardbrewLOGO.5b7f0846e786a3a5137e.png",
     "static/media/sewingQR.png": "/TerpLocal/static/media/sewingQR.cb5484fe18e6c9703e30.png",
     "static/media/vigilanteqr.png": "/TerpLocal/static/media/vigilanteqr.dbc8e88c3d8c70e0667b.png",
     "static/media/boardQR.png": "/TerpLocal/static/media/boardQR.d049f4259be79c3ea382.png",
     "index.html": "/TerpLocal/index.html",
-    "main.3986dd6c.css.map": "/TerpLocal/static/css/main.3986dd6c.css.map",
-    "main.8250c73a.js.map": "/TerpLocal/static/js/main.8250c73a.js.map",
+    "main.cf22fa03.css.map": "/TerpLocal/static/css/main.cf22fa03.css.map",
+    "main.f68463fb.js.map": "/TerpLocal/static/js/main.f68463fb.js.map",
     "787.101cd2b0.chunk.js.map": "/TerpLocal/static/js/787.101cd2b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3986dd6c.css",
-    "static/js/main.8250c73a.js"
+    "static/css/main.cf22fa03.css",
+    "static/js/main.f68463fb.js"
   ]
 }
