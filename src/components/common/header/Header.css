@@ -19,7 +19,9 @@
 }
 
 .header-logo {
-  color: rgb(177, 58, 78);
+  background: linear-gradient(to right, #ff7e5f, #b13a4e);
+  -webkit-background-clip: text;
+  color: transparent;
   text-decoration: inherit;
   font-family: "Times New Roman", Times, serif;
   font-size: 100px;
