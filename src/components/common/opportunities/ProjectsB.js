@@ -2,8 +2,9 @@ import Project from "./Project";
 import "./Opportunities.css";
 import { useState } from "react";
 import Image from "./Image";
+import { useNavigate } from "react-router-dom";
 
-const ProjectsB = ({projects}) => {
+const ProjectsB = ({projects, dashboard}) => {
     const [formModal, setFormModal] = useState(false);
     const [img, setImg] = useState("https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png");
     const [title, setTitle] = useState('');
@@ -11,6 +12,8 @@ const ProjectsB = ({projects}) => {
     const [major, setMajor] = useState('');
     const [description, setDescription] = useState('');
     const [url, setUrl] = useState('');
+
+    const navigate = useNavigate();
 
     const toggleForm = () => {
         setFormModal(!formModal);
@@ -33,6 +36,10 @@ const ProjectsB = ({projects}) => {
         const selectedFile = e.target.files[0];
         setImg(selectedFile);
     };
+
+    const toAllProjects = () => {
+        navigate("/opportunities");
+    }
     
     const addProject = () => {
         const newProject = [
@@ -57,9 +64,11 @@ const ProjectsB = ({projects}) => {
 
     return (
         <>
-            <button className="add" onClick={toggleForm}>
-                Create New Posting
-            </button>
+            {!dashboard && (
+                <button className="add" onClick={toggleForm}>
+                    Create New Posting
+                </button>
+            )}
             {(formModal && (
                 <div>
                     <form className="add_form">
@@ -85,6 +94,14 @@ const ProjectsB = ({projects}) => {
             {currentProjects.map((project) => (
                 <Project key = {project.id} project = {project} updateProjects= {updateProjects}/>
             ))}
+
+            {dashboard && (
+                <div>
+                    <button className="add" onClick={toAllProjects}>
+                        All Projects
+                    </button>
+                </div>
+            )}
         </>
     )
 }

@@ -3,6 +3,7 @@ import "../page-title/PageTitle.css";
 import "./Dashboard.css";
 import Projects from "./projects/Projects";
 import { AccountSetUp } from "./AccountSetUp";
+import ProjectsB from "../opportunities/ProjectsB";
 
 function Dashboard({ projects, isStudent, email }) {
   if (isStudent) {
@@ -35,8 +36,8 @@ function Dashboard({ projects, isStudent, email }) {
         </div>
         <h2 className="side-column">Your Projects:</h2>
         <div>
-          <Projects
-            projects={projects.filter((project) => project.company === email)}
+          <ProjectsB
+            projects={projects.slice(0,2)} dashboard={true}
           />
         </div>
       </section>

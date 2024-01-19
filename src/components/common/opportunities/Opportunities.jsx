@@ -65,7 +65,7 @@ function Opportunities({ projects, isStudent }) {
                 My Projects
             </div>
             <div className="container">
-                <ProjectsB projects = {projects} />
+                <ProjectsB projects = {projects} dashboard={false} />
             </div>
         </section>
     )
