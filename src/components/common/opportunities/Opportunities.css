@@ -120,12 +120,13 @@
 
 .add_form {
   z-index: 4;
-  position: absolute;
+  position: fixed;
   background-color: rgb(241, 197, 171);
   border: 0.2rem solid rgb(236, 146, 94);
   padding: 1rem;
   border-radius: 1rem;
   right: 15px;
+  top: 15px;
   animation: slide2 0.5s forwards;
 }
 
