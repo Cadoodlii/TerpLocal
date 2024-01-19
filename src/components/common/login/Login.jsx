@@ -24,36 +24,47 @@ const Login = ({ onLogin, isStudent }) => {
 
     return (
         <div>
-            <h2>{role} Login</h2>
-            <br></br>
-            <form>
-                <div>
-                    <label htmlFor="email">Email:</label>&nbsp;&nbsp;
-                    <input
-                        type="text"
-                        className="login_field"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </div>
+            <div to="/" className="header-logo">
+                TerpLocal
+            </div>
+
+            <div>
+                <h2>{role} Login</h2>
                 <br></br>
-                <div>
-                    <label htmlFor="password">Password:</label>&nbsp;&nbsp;
-                    <input
-                        type="password"
-                        className="login_field"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </div>
-                {error && <p style={{color: 'red'}}>{error}</p>}
-                <br></br>
-                <button type="button" className="custom-btn" onClick={handleLogin}>Login</button>&nbsp;&nbsp;
-                <button type="button" className="custom-btn" onClick={handleSignUp}>Sign Up</button>
-            </form>
-        </div>
+                <form>
+                    <div>
+                        <label htmlFor="email">Email:</label>&nbsp;&nbsp;
+                        <input
+                            type="text"
+                            className="login_field"
+                            id="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </div>
+                    <br></br>
+                    <div>
+                        <label htmlFor="password">Password:</label>&nbsp;&nbsp;
+                        <input
+                            type="password"
+                            className="login_field"
+                            id="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                    </div>
+                    {error && <p style={{ color: "red" }}>{error}</p>}
+                    <br></br>
+                    <button type="button" className="custom-btn" onClick={handleLogin}>
+                        Login
+                    </button>
+                    &nbsp;&nbsp;
+                    <button type="button" className="custom-btn" onClick={handleSignUp}>
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+      </div>
     );
 };
 

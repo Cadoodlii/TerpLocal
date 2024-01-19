@@ -12,7 +12,7 @@ function Navbar({onLogout, isLoggedIn, isStudent}) {
     };
 
     return (
-        isLoggedIn ? 
+        isLoggedIn ?
         <section className="navbar">
             <Link to="/dashboard" className="navbar-item">Dashboard</Link>
             <Link to="/opportunities" className="navbar-item"> {isStudent ? "Opportunities" : "My Projects" } </Link>
@@ -21,7 +21,9 @@ function Navbar({onLogout, isLoggedIn, isStudent}) {
             <Link to="/" className="navbar-item" onClick={handleLogout}>Logout</Link>
         </section> :
         <section className="navbar">
-            <Link to="/login" className="navbar-item">Login</Link>
+            {/* Navbar and header will not be visible when NOT logged in. */}
+            {/* I did this to make the homepage look cleaner when  */}
+            {/* new users are seeing it  */}
         </section>
     )
 }

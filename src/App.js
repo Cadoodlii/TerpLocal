@@ -121,7 +121,7 @@ function App() {
           <LandingButton isStudent={isStudent} setStudent={setStudent} />
         )}
 
-        <Routes>
+        <Routes className = "login_box">
           <Route path="/" element={<HomePage isStudent={isStudent} />} />
           <Route
             path="/dashboard"
@@ -151,6 +151,9 @@ function App() {
             element={<SignUp onSignUp={handleSignUp} isStudent={isStudent} />}
           />
         </Routes>
+        {!isLoggedIn && (
+          <LandingButton isStudent={isStudent} setStudent={setStudent} />
+        )}
       </div>
       <Footer />
     </>

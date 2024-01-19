@@ -43,3 +43,11 @@
     height: 1.5rem;
     font-size: 1rem;
 }
+
+.dual_buttons{
+    margin:auto;
+    position: relative;
+    padding: 25px;
+    
+}
+
