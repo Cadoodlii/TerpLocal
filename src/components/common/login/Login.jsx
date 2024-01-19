@@ -23,7 +23,7 @@ const Login = ({ onLogin, isStudent }) => {
     const role = isStudent ? "Student" : "Business";
 
     return (
-        <div>
+        <div className = "biden">
             <h2>{role} Login</h2>
             <br></br>
             <form>

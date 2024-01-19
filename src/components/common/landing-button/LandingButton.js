@@ -5,26 +5,29 @@ const LandingButton = ({isStudent, setStudent}) => {
 
 
   return (
-    <div>
-        <button
-          className= {`landing-btn student ${isStudent ? "btn-active" : ""}`} 
-          onClick={() => { setStudent(true); console.log("student btn clicked")
-          }}>
+    <div className = "dual_buttons"> {/*   Student/Business Button*/}
+            
+          <Link to="/login"
+            className= {`landing-btn student ${isStudent ? "btn-active" : ""}`}
+            onClick={ () => {
+              setStudent(true);
+              console.log("student btn clicked");
+            } }
+          >
+            Student
+          </Link>
 
-            <Link to="/login"  style={{ textDecoration: 'none' , color:"white"} }  >
-              Student
-            </Link>
 
-        </button>
-        <button
-          className= {`landing-btn business ${!isStudent ? "btn-active" : ""}`} 
-          onClick={() => { setStudent(false);console.log("business btn clicked")}}>
+          <Link to="/login"
+            className= {`landing-btn business ${!isStudent ? "btn-active" : ""}` }
+            onClick={ () => {
+              setStudent(false);
+              console.log("business btn clicked");
+            } }
+          >
+            Business
+          </Link>
 
-            <Link to="/login" style={{ textDecoration: 'none' , color:"white"}} >
-              Business
-            </Link>
-
-        </button>
     </div>
   )
 }

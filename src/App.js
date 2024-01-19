@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import Login from './components/common/login';
 import SignUp from './components/common/signup/SignUp';
-import HomePage from './components/common/home/HomePage'
+import HomePage from './components/common/home/HomePage';
 import { Header, Dashboard, Opportunites, Rewards, Profile} from './components/common';
 import { Routes, Route} from "react-router-dom";
 import LandingButton from './components/common/landing-button/LandingButton';
@@ -55,10 +55,8 @@ function App() {
     <div className="App">
 
       <Header isLoggedIn={isLoggedIn} onLogout={handleLogout}/>
-
-      {!isLoggedIn && <LandingButton isStudent= {isStudent} setStudent= {setStudent}/>}
       
-      <Routes>
+      <Routes className = "login_box">
         <Route path = "/" element = {<HomePage isStudent= {isStudent} />} />
         <Route path = "/dashboard" element = {<Dashboard isStudent= {isStudent} projects = {projects} email = {email}/>} />
         <Route path = "/opportunites" element = {<Opportunites isStudent= {isStudent}/>} />
@@ -66,7 +64,11 @@ function App() {
         <Route path = "/profile" element = {<Profile isStudent= {isStudent} email= {email}/>} />
         <Route path = "/login" element = {<Login onLogin= {handleLogin} isStudent= {isStudent}/>} />
         <Route path = "/signup" element = {<SignUp onSignUp= {handleSignUp} isStudent= {isStudent} />} />
+        
       </Routes>
+      
+      {!isLoggedIn && <LandingButton isStudent= {isStudent} setStudent= {setStudent}/>}
+
     </div>
   );
 }

@@ -6,7 +6,8 @@ function HomePage ({isStudent}) {
         return (
             <section>
                 <div className="title">
-                    Website Description (HomePage)
+                    {/** Website Description (HomePage) */}
+                    <h1> Welcome to</h1>
                 </div>
             </section>
         )
