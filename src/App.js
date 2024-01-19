@@ -117,10 +117,6 @@ function App() {
           isStudent={isStudent}
         />
 
-        {!isLoggedIn && (
-          <LandingButton isStudent={isStudent} setStudent={setStudent} />
-        )}
-
         <Routes className = "login_box">
           <Route path="/" element={<HomePage isStudent={isStudent} />} />
           <Route
@@ -151,9 +147,11 @@ function App() {
             element={<SignUp onSignUp={handleSignUp} isStudent={isStudent} />}
           />
         </Routes>
+
         {!isLoggedIn && (
           <LandingButton isStudent={isStudent} setStudent={setStudent} />
         )}
+        
       </div>
       <Footer />
     </>

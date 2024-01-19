@@ -23,7 +23,7 @@ const Login = ({ onLogin, isStudent }) => {
     const role = isStudent ? "Student" : "Business";
 
     return (
-        <div>
+        <div className="container">
             <div to="/" className="header-logo">
                 TerpLocal
             </div>

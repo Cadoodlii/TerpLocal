@@ -47,6 +47,7 @@
 .dual_buttons{
     margin:auto;
     position: relative;
+    bottom: 225px;
     padding: 25px;
     
 }

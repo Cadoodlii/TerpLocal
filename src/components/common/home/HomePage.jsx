@@ -4,7 +4,7 @@ import "../page-title/PageTitle.css";
 
 function HomePage ({isStudent}) {
         return (
-            <section>
+            <section className="container">
                 <div className="title">
                     {/** Website Description (HomePage) */}
                     <h1> Welcome to</h1>
