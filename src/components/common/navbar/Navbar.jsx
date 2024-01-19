@@ -22,7 +22,9 @@ function Navbar({onLogout, isLoggedIn}) {
             <Link to="/" className="navbar-item" onClick={handleLogout}>Logout</Link>
         </section> :
         <section className="navbar">
-            {/*Comment: Navbar will not be visible when NOT logged in. */}
+            {/* Navbar and header will not be visible when NOT logged in. */}
+            {/* I did this to make the homepage look cleaner when  */}
+            {/* new users are seeing it  */}
         </section>
     )
 }
