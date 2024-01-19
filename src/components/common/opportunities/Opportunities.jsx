@@ -60,17 +60,14 @@ function Opportunities({ projects, isStudent }) {
     );
   } else {
     return (
-        <section>
-            <div className="title">
-                My Projects
-            </div>
-            <div className="container">
-                <ProjectsB projects = {projects} dashboard={false} />
-            </div>
-        </section>
-    )
-  };
-
+      <section>
+        <div className="title"></div>
+        <div className="container">
+          <ProjectsB projects={projects} dashboard={false} />
+        </div>
+      </section>
+    );
+  }
 }
 
 export default Opportunities;
