@@ -23,7 +23,7 @@ function Header({onLogout, isLoggedIn, isStudent}) {
                 
                 <section className="header-top__navbar">
                     <section className="header-top__navigation">
-                        <Navbar isLoggedIn={isLoggedIn} onLogout= {onLogout} />
+                        <Navbar isLoggedIn={isLoggedIn} onLogout= {onLogout} isStudent = {isStudent}/>
                     </section>
                     <hr className="header-top__separator"/>
                 </section>
