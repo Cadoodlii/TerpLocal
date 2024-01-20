@@ -24,7 +24,7 @@ const SignUp = ({ onSignUp, isStudent }) => {
     const role = isStudent ? "Student" : "Business";
 
     return (
-        <div>
+        <div className="container">
             <h2>{role} Sign Up</h2>
             <br></br>
             <form>
