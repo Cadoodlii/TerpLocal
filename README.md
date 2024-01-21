@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+Project story
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## We use Handshake daily to apply for internships and attend career events on campus. However, when it comes to major-based personal projects students are often left clueless of where to start or how to do it. TerpLocal was created with this idea in mind because it would guide students along this process while also helping small-time businesses.
 
-## Available Scripts
+## What it does
 
-In the project directory, you can run:
+Our website is designed to enable local businesses in the College Park community to post projects related to their work for students on campus to complete in return for rewards. Students can learn to apply their knowledge from class in a real-world setting, while businesses gain valuable connections with students in addition to their work (a new website, logo, marketing plan, etc).
 
-### `npm start`
+## How we built it
+We used ReactJS for building our website and functionality, and HTML and CSS to design it. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Challenges we ran into
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Most of us were new to using Git and Github to collaborate with a team, so we spent time learning the basics and eventually developed a good rhythm of each working on our separate branches and merging as necessary through Github Desktop.
 
-### `npm test`
+Additionally, many of us proposed different methods of implementing our project (MangoDB, React.js, CMS, HTML). So we spent the first week thoroughly researching the practicality of these methods and then debated on the pros and cons of each. We settled on React.js because it gave us a good opportunity to learn the basics of web development (HTML, CSS, JS) while also providing some basic tools (like components and props) that provided us with convenient ways to add interactions and functionality.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Accomplishments that we're proud of
+We are proud of completing the front end of the website, with basic functionality such as allowing the user to edit the tables and click through the different pages. 
 
-### `npm run build`
+## What we learned
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We learned a lot about web development languages and frameworks, such as ReactJS, HTML, and CSS. We also learned a lot about using Github and how to share code as a team. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## What's next for TerpLocal
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the future, we would like to work on the backend and have a database that works with the website to store user information. We would also like to design the CSS to be compatible with different devices. 
 
-### `npm run eject`
+## Contributors
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Catherine Li, Meenakshi Rama S, Bhavika Buddi, Bryan Amaro, Emeka Ogbuachi
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Resources
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Project images were generated with AI (Bing's Image Creator) and pictures.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Tutorials:
 
-## Learn More
+React Website Tutorial: https://www.youtube.com/watch?v=I2UBjN5ER4s
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ReactJS Crash Course: https://youtu.be/w7ejDZ8SWv8?si=2_dzlZsiWZ7fvLIq
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React Navbar Navigation: https://youtu.be/XOxwwtnZS5U?si=vd0CC3DuoRHZywNy
 
-### Code Splitting
+React Router Tutorial: https://youtu.be/l3H5aWVUDBk?si=KxPTmjHMU2zILWWf
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React Filter: https://youtu.be/u1yr_HZivzk?si=KOlooHvzNPOm-JFr
 
-### Analyzing the Bundle Size
+Git and Github: https://youtu.be/RGOj5yH7evk?si=hotMdA-e0JdGIReY
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deploying React App on Github: https://github.com/gitname/react-gh-pages?tab=readme-ov-file
