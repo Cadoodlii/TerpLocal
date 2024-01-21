@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/TerpLocal/static/css/main.cf22fa03.css",
-    "main.js": "/TerpLocal/static/js/main.44088d4c.js",
+    "main.css": "/TerpLocal/static/css/main.f02dfb4e.css",
+    "main.js": "/TerpLocal/static/js/main.26b61c12.js",
     "static/js/787.101cd2b0.chunk.js": "/TerpLocal/static/js/787.101cd2b0.chunk.js",
     "static/media/Flowerist.jpg": "/TerpLocal/static/media/Flowerist.9cdcf2e4d7d411acf01e.jpg",
-    "static/media/vigilanteLOGO.png": "/TerpLocal/static/media/vigilanteLOGO.0e684d0b5db7dd5bbc69.png",
+    "static/media/coffee.jpeg": "/TerpLocal/static/media/coffee.cd9ef3557014da90d778.jpeg",
+    "static/media/fabrics.jpeg": "/TerpLocal/static/media/fabrics.2a0ee4b3551d0cdb00e1.jpeg",
     "static/media/Airi'sStudio.jpeg": "/TerpLocal/static/media/Airi'sStudio.59d90e49393458b12ed0.jpeg",
     "static/media/Ella'sBakery.jpeg": "/TerpLocal/static/media/Ella'sBakery.5bc47b4f5fe73ab6394c.jpeg",
-    "static/media/sewinglogo.png": "/TerpLocal/static/media/sewinglogo.ff220a595c414dc0d252.png",
     "static/media/RetailTherapy.jpeg": "/TerpLocal/static/media/RetailTherapy.5f59adbe84ff5b170127.jpeg",
     "static/media/Sparkle.jpeg": "/TerpLocal/static/media/Sparkle.eae0aa2f312221208256.jpeg",
+    "static/media/pizza.jpg": "/TerpLocal/static/media/pizza.6b91a46ac1589769d396.jpg",
     "static/media/LightAsFeather.jpeg": "/TerpLocal/static/media/LightAsFeather.49331afa60dce6f03a19.jpeg",
-    "static/media/boardbrewLOGO.png": "/TerpLocal/static/media/boardbrewLOGO.5b7f0846e786a3a5137e.png",
-    "static/media/sewingQR.png": "/TerpLocal/static/media/sewingQR.cb5484fe18e6c9703e30.png",
-    "static/media/vigilanteqr.png": "/TerpLocal/static/media/vigilanteqr.dbc8e88c3d8c70e0667b.png",
-    "static/media/boardQR.png": "/TerpLocal/static/media/boardQR.d049f4259be79c3ea382.png",
+    "static/media/qr.png": "/TerpLocal/static/media/qr.2855c55e8540f762964a.png",
     "index.html": "/TerpLocal/index.html",
-    "main.cf22fa03.css.map": "/TerpLocal/static/css/main.cf22fa03.css.map",
-    "main.44088d4c.js.map": "/TerpLocal/static/js/main.44088d4c.js.map",
+    "main.f02dfb4e.css.map": "/TerpLocal/static/css/main.f02dfb4e.css.map",
+    "main.26b61c12.js.map": "/TerpLocal/static/js/main.26b61c12.js.map",
     "787.101cd2b0.chunk.js.map": "/TerpLocal/static/js/787.101cd2b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf22fa03.css",
-    "static/js/main.44088d4c.js"
+    "static/css/main.f02dfb4e.css",
+    "static/js/main.26b61c12.js"
   ]
 }
