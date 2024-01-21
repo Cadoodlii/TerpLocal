@@ -32,3 +32,19 @@ In the future, we would like to work on the backend and have a database that wor
 
 Catherine Li, Meenakshi Rama S, Bhavika Buddi, Bryan Amaro, Emeka Ogbuachi
 
+## Resources:
+
+Project images were generated with AI (Bing's Image Creator). 
+
+Tutorials: 
+
+HTML, CSS, and Javascript: https://www.youtube.com/watch?v=FazgJVnrVuI
+More HTML, CSS, and Javascript: https://www.youtube.com/watch?v=_GTMOmRrqkU
+Web Development: https://www.geeksforgeeks.org/web-development/
+React Website Tutorial: https://www.youtube.com/watch?v=I2UBjN5ER4s
+ReactJS Crash Course: https://youtu.be/w7ejDZ8SWv8?si=2_dzlZsiWZ7fvLIq
+React Navbar Navigation: https://youtu.be/XOxwwtnZS5U?si=vd0CC3DuoRHZywNy
+React Router Tutorial: https://youtu.be/l3H5aWVUDBk?si=KxPTmjHMU2zILWWf
+React Filter: https://youtu.be/u1yr_HZivzk?si=KOlooHvzNPOm-JFr
+Git and Github: https://youtu.be/RGOj5yH7evk?si=hotMdA-e0JdGIReY
+Deploying React App on Github: https://github.com/gitname/react-gh-pages?tab=readme-ov-file
