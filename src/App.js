@@ -15,12 +15,12 @@ import { Routes, Route } from "react-router-dom";
 import LandingButton from "./components/common/landing-button/LandingButton";
 import Footer from "./components/common/footer/Footer";
 
-import LittleBoyBakeryImage from "./images/LittleBoyBakery.png";
-import ValenciasProduceImage from "./images/ValenciasProduce.png";
-import RandaliaBeehivesImage from "./images/RandaliaBeehives.png";
-import WoodsFlowersAndGiftsImage from "./images/WoodsFlowersAndGifts.png";
-import FairDaysPlay from "./images/FairDaysPlay.png";
-import FiasFabulousFinds from "./images/FiasFabulousFinds.png";
+import AirisStudio from "./images/Airi'sStudio.jpeg";
+import EllasBakery from "./images/Ella'sBakery.jpeg";
+import Flowerist from "./images/Flowerist.jpg";
+import LightAsFeather from "./images/LightAsFeather.jpeg";
+import RetailTherapy from "./images/RetailTherapy.jpeg";
+import Sparkle from "./images/Sparkle.jpeg";
 
 function App() {
   const [isStudent, setStudent] = useState(false);
@@ -47,62 +47,62 @@ function App() {
     {
       id: 1,
       title: "Build a Website",
-      company: "Valencia's Produce",
+      company: "Airi's Studio",
       major: "computer science",
       description:
         "Help us build our website! Looking for computer science majors with at least 1 year of web development experience",
-      image: ValenciasProduceImage,
-      url: "https://www.instagram.com/valenciasproduce/",
+      image: AirisStudio,
+      url: "google.com",
     },
     {
       id: 2,
       title: "Design a New Logo",
-      company: "Wood's Flowers And Gifts",
+      company: "Flowerist",
       major: "art",
       description:
         "Help us design a logo for our business! We are looking for an updated logo that incorporates both the drinks and games aspect of our restaurant. Looking for students skilled in art/graphic design",
-      image: WoodsFlowersAndGiftsImage,
-      url: "https://www.woodsflowersandgifts.com/",
+      image: Flowerist,
+      url: "google.com",
     },
     {
       id: 3,
       title: "Make a Marketing Campaign",
-      company: "Little Boy Bakery",
+      company: "Ella's Bakery",
       major: "business",
       description:
-        "Help us grow our social media account by creating a marketing campaign plan. Looking for students who have experience in marketing",
-      image: LittleBoyBakeryImage,
-      url: "https://littleboybakery.com/",
+        "Help us grow our social media account by creating a marketing campaign plan. Looking for students who have experience in marketing. We're offering vouchers.",
+      image: EllasBakery,
+      url: "google.com",
     },
     {
       id: 4,
-      title: "Design a Logo",
-      company: "Fair Day's Play",
-      major: "art",
+      title: "Build Our website",
+      company: "Sparkle",
+      major: "computer science",
       description:
-        "Help us design a logo for our business! We're a small business dedicated providing kids with fun and unique toys.",
-      image: FairDaysPlay,
-      url: "https://fairdaysplay.com/",
+        "Help us design a website for our business! We're a small business dedicated to providing the highest quality jewelry.",
+      image: Sparkle,
+      url: "google.com",
     },
     {
       id: 5,
       title: "Manage Our Socials",
-      company: "Randalia Beehives",
+      company: "Light As Feather",
       major: "business",
       description:
         "Help us grow our social media account by creating a marketing campaign plan. Looking for students who have experience in marketing",
-      image: RandaliaBeehivesImage,
-      url: "https://randaliafarm.com/",
+      image: LightAsFeather,
+      url: "google.com",
     },
     {
       id: 6,
       title: "Design a Logo",
-      company: "Fia's Fabulous Finds",
+      company: "Retail Therapy",
       major: "art",
       description:
         "Help us design a logo for our business! We're a small business dedicated to upscaling garments that have previously been donated.",
-      image: FiasFabulousFinds,
-      url: "https://www.facebook.com/Fiasfabfinds/",
+      image: RetailTherapy,
+      url: "google.com",
     },
   ]);
 
