@@ -8,7 +8,7 @@ function BusinessProfile() {
   const [inputMission, setMission] = useState("Make the world a better place!");
 
   const handleName = (event) => setInputName(event.target.value);
-  const handleDate = (event) => setDate(event.tager.value);
+  const handleDate = (event) => setDate(event.target.value);
   const handleMission = (event) => setMission(event.target.value);
 
   return (
