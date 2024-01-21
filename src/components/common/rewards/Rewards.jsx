@@ -1,8 +1,8 @@
 import React from "react";
 import "../page-title/PageTitle.css";
-import bbLogo from "../../../images/boardbrewLOGO.png";
-import vigilanteLogo from "../../../images/vigilanteLOGO.png";
-import sewingLogo from "../../../images/sewinglogo.png";
+import pizzaPic from "../../../images/pizza.jpg";
+import coffeePic from "../../../images/coffee.jpeg";
+import sewingPic from "../../../images/fabrics.jpeg";
 import "./Rewards.css";
 import Modal from "./Modal";
 import ModalV from "./ModalV";
@@ -40,8 +40,8 @@ function Rewards({ isStudent }) {
     return (
       <section class="container">
         <div class="box">
-          <img class="logo" src={bbLogo} alt="Board and Brew Logo" />
-          <h1 class="text">Board and Brew</h1>
+          <img class="logo" src={pizzaPic} alt="Board and Brew Logo" />
+          <h1 class="text">Pizza Restaurant</h1>
           <h2 class="text-project">Project: Logo Design</h2>
           <p class="text-reward">Enjoy 15% off your next purchase!</p>
           <button className="redeemButton" onClick={() => setOpenModal(true)}>
@@ -54,8 +54,8 @@ function Rewards({ isStudent }) {
         </div>
 
         <div class="box2">
-          <img class="logo" src={vigilanteLogo} alt="Vigilante Logo" />
-          <h1 class="text">Vigilante Coffee Co</h1>
+          <img class="logo" src={coffeePic} alt="Vigilante Logo" />
+          <h1 class="text">Coffee Shop</h1>
           <h2 class="text-project">Project: Social Media Marketing</h2>
           <p class="text-reward">Enjoy one free small coffee!</p>
           <button className="redeemButton" onClick={() => setOpenModalV(true)}>
@@ -68,8 +68,8 @@ function Rewards({ isStudent }) {
         </div>
 
         <div class="box3">
-          <img class="logo" src={sewingLogo} alt="Sewing Logo" />
-          <h1 class="text">Three Little Birds Sewing Co</h1>
+          <img class="logo" src={sewingPic} alt="Sewing Logo" />
+          <h1 class="text">Sewing Business</h1>
           <h2 class="text-project">Project: Website</h2>
           <p class="text-reward">Enjoy 30% off your next sewing class!</p>
           <button className="redeemButton" onClick={() => setOpenModalS(true)}>

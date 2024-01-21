@@ -1,5 +1,5 @@
 import React from "react";
-import sewingQR from "../../../images/sewingQR.png";
+import QR from "../../../images/qr.png";
 import "./Modal.css";
 
 const ModalS = ({ closeModal }) => {
@@ -13,7 +13,7 @@ const ModalS = ({ closeModal }) => {
         </div>
 
         <div className="imgContainer">
-          <img className="img" src={sewingQR} alt="QR Code" />
+          <img className="img" src={QR} alt="QR Code" />
         </div>
 
         <div className="body">

@@ -1,5 +1,5 @@
 import React from "react";
-import bbQR from "../../../images/boardQR.png";
+import QR from "../../../images/qr.png";
 import "./Modal.css";
 
 const Modal = ({ closeModal }) => {
@@ -13,7 +13,7 @@ const Modal = ({ closeModal }) => {
         </div>
 
         <div className="imgContainer">
-          <img className="img" src={bbQR} alt="QR Code" />
+          <img className="img" src={QR} alt="QR Code" />
         </div>
 
         <div className="body">
