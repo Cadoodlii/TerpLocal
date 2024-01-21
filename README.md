@@ -1,6 +1,6 @@
-Project story
+## Project story
 
-## We use Handshake daily to apply for internships and attend career events on campus. However, when it comes to major-based personal projects students are often left clueless of where to start or how to do it. TerpLocal was created with this idea in mind because it would guide students along this process while also helping small-time businesses.
+We use Handshake daily to apply for internships and attend career events on campus. However, when it comes to major-based personal projects students are often left clueless of where to start or how to do it. TerpLocal was created with this idea in mind because it would guide students along this process while also helping small-time businesses.
 
 ## What it does
 
