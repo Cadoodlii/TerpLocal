@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TerpLocal/static/css/main.f02dfb4e.css",
-    "main.js": "/TerpLocal/static/js/main.26b61c12.js",
+    "main.js": "/TerpLocal/static/js/main.719e61a2.js",
     "static/js/787.101cd2b0.chunk.js": "/TerpLocal/static/js/787.101cd2b0.chunk.js",
     "static/media/Flowerist.jpg": "/TerpLocal/static/media/Flowerist.9cdcf2e4d7d411acf01e.jpg",
     "static/media/coffee.jpeg": "/TerpLocal/static/media/coffee.cd9ef3557014da90d778.jpeg",
@@ -15,11 +15,11 @@
     "static/media/qr.png": "/TerpLocal/static/media/qr.2855c55e8540f762964a.png",
     "index.html": "/TerpLocal/index.html",
     "main.f02dfb4e.css.map": "/TerpLocal/static/css/main.f02dfb4e.css.map",
-    "main.26b61c12.js.map": "/TerpLocal/static/js/main.26b61c12.js.map",
+    "main.719e61a2.js.map": "/TerpLocal/static/js/main.719e61a2.js.map",
     "787.101cd2b0.chunk.js.map": "/TerpLocal/static/js/787.101cd2b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f02dfb4e.css",
-    "static/js/main.26b61c12.js"
+    "static/js/main.719e61a2.js"
   ]
 }
